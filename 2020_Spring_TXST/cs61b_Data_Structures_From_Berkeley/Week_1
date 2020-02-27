@@ -15,4 +15,31 @@
                       return isDivisible(x, k+1);
     }
     
-5. 
+5. From Recursive to Iteration 
+   
+   /* Recursive */
+   if ( k >= x )
+          return false;
+   else if (x % k == 0)
+          return true;
+   else
+          return isDivisible(x, k+1 );
+          
+   /* Iteration - 1 */
+   while ( k < x ) {  
+      if (x % k == 0)
+          return true;
+      k = k+1 ;
+   }
+   return false;
+          
+   /* Iteration - 2 */       
+   for ( int k1 = k ; k1 < x ; k1 += 1 ) {
+      if (x % k1 == 0)
+      return true;
+   }
+   return false;
+          
+          
+          
+          
