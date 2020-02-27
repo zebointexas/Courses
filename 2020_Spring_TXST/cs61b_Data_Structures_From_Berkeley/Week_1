@@ -39,7 +39,12 @@
       return true;
    }
    return false;
-          
-          
-          
+   
+6.    ls -a     list all the files and folders in your current directory.
+
+7.    ls -l     list all the files and folders in your current directory, including hidden files.
+
+8.    cp        copy a file       cp lab1/original lab2/duplicate 
+
+9.    mv        move or rename a file    lab1/original lab2/original
           
