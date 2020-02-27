@@ -1,1 +1,18 @@
+1. Every function and variable in Java is contained in some class.
 
+2. All classes, in turn, belong to some package. The Hello class belongs to the anonymous package.
+
+3. Static methods and variables are “one-of” things.
+
+4. Check if it is Prime: 
+
+   private static boolean isDivisible(int x, int k) {  
+        if (k >= x) // a "guard"
+                      return false;
+        else if (x % k == 0) // "%" means "remainder"
+                      return true;
+        else // if (k < x && x % k != 0)
+                      return isDivisible(x, k+1);
+    }
+    
+5. 
