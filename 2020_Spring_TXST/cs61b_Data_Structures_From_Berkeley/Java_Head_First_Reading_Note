@@ -1,0 +1,2 @@
+1. Local variable 必须初始化才能使用。不然报错。但是，Instance不需初始化就可以使用（默认值！）参考书 Page 85  
+
