@@ -1,0 +1,14 @@
+how to login:
+
+sqlplus wp01@csdbora
+
+newfirebird.cs.txstate.edu 
+
+
+ls *.py 
+
+
+mysql -u peng -p 
+
+use class_bbs 
+
