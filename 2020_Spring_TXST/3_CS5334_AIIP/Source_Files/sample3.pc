@@ -1,0 +1,218 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <sqlca.h>
+
+#define NAME_LENGTH    10
+#define ARRAY_LENGTH   20
+
+char *username = "Z_X3";
+char *password = "sKZHzn234_A3";
+char *db_string = "CSDBORA";
+
+struct
+{
+    char   emp_name[ARRAY_LENGTH][NAME_LENGTH];
+    float  salary[ARRAY_LENGTH];
+    float  comm[ARRAY_LENGTH];
+} emp_rec;
+
+struct
+{    
+    char   dept_name[ARRAY_LENGTH][NAME_LENGTH];
+    char   emp_name[ARRAY_LENGTH][NAME_LENGTH];
+    float  salary[ARRAY_LENGTH];
+} emp_rec2;
+
+
+void print_rows(n) int n;
+{
+    int i;
+
+    printf("\nEmployee   Salary    commission");
+    printf("\n~~~~~~~~   ~~~~~~    ~~~~~~~~~~\n");
+
+    for (i = 0; i < n; i++)
+        printf("%s  %8.2f  %8.2f\n",
+               emp_rec.emp_name[i], 
+			   emp_rec.salary[i], 
+			   emp_rec.comm[i]);
+
+}
+ 
+void print_rows1(n)
+    int n;
+{
+    int i;
+
+    printf("\nDepartmentName   EmployeeName    Salary");
+    printf("\n~~~~~~~~~~~~~~   ~~~~~~~~~~~~    ~~~~~~\n");
+
+    for (i = 0; i < n; i++)
+        printf("%s        %s        %8.2f\n",
+               emp_rec2.dept_name[i],
+			   emp_rec2.emp_name[i],
+			   emp_rec2.salary[i]);
+
+}
+
+void sql_error(msg) char *msg;
+{
+    EXEC SQL WHENEVER SQLERROR CONTINUE;
+
+    printf("\n%s", msg);
+	
+    printf("\n% .70s \n", sqlca.sqlerrm.sqlerrmc);
+
+    EXEC SQL ROLLBACK WORK RELEASE;
+    exit(EXIT_FAILURE);
+}
+
+void main(int argc, char *argv[])
+{
+    int  num_ret;  
+	
+    int deptno;
+	
+    char *deptname = NULL;
+	
+    int minSalary;
+	
+    int maxSalary;
+	
+    int minCommission;
+	
+    int maxCommission;
+	
+ 
+    EXEC SQL WHENEVER SQLERROR DO sql_error("Connect ERROR:");
+
+    EXEC SQL CONNECT :username IDENTIFIED BY :password USING :db_string;
+    
+    EXEC SQL WHENEVER SQLERROR DO sql_error("Oracle ERROR:");
+ 
+    if (strcmp(argv[1],"deptno")==0)
+    { 
+		deptno =atoi(argv[2]);
+		
+		EXEC SQL DECLARE c1 CURSOR FOR
+        SELECT ename, sal, NVL(comm,0) 
+        FROM emp
+        WHERE deptno = :deptno;
+		
+        EXEC SQL OPEN c1;
+	 
+		num_ret = 0;
+ 
+		EXEC SQL WHENEVER NOT FOUND DO break;
+		for (;;)
+		{
+			EXEC SQL FETCH c1 INTO :emp_rec;
+		 	
+			print_rows(sqlca.sqlerrd[2] - num_ret);
+			num_ret = sqlca.sqlerrd[2];         
+		}
+ 
+		if ((sqlca.sqlerrd[2] - num_ret) > 0)
+			print_rows(sqlca.sqlerrd[2] - num_ret);
+
+		EXEC SQL CLOSE c1;
+		printf("\nAu revoir. - Zebo don't understand the french!! \n\n\n");
+ 
+		EXEC SQL COMMIT WORK RELEASE;
+		exit(EXIT_SUCCESS);
+    }
+
+    else if (strcmp(argv[1],"deptname")==0)
+    { 
+          
+        deptname=argv[2];
+		
+        EXEC SQL DECLARE c2 CURSOR FOR
+        SELECT e.ename, e.sal, NVL(e.comm,0) 
+        FROM emp e,dept d
+        WHERE e.deptno = d.deptno AND d.dname = UPPER(:deptname);
+
+        EXEC SQL OPEN c2;
+		
+		num_ret = 0;
+		
+		EXEC SQL WHENEVER NOT FOUND DO break;
+		for (;;)
+		{
+			EXEC SQL FETCH c2 INTO :emp_rec;
+			print_rows(sqlca.sqlerrd[2] - num_ret);
+			num_ret = sqlca.sqlerrd[2];        
+		}
+		
+		if ((sqlca.sqlerrd[2] - num_ret) > 0)
+			print_rows(sqlca.sqlerrd[2] - num_ret);
+
+		EXEC SQL CLOSE c2;
+		EXEC SQL COMMIT WORK RELEASE;
+		exit(EXIT_SUCCESS);
+    }
+     
+    else if (strcmp(argv[1],"salary1")==0 && strcmp(argv[3],"salary2")==0 )
+    {  
+       minSalary = atoi(argv[2]);
+       maxSalary =  atoi(argv[4]);
+       
+		EXEC SQL DECLARE c3 CURSOR FOR
+        SELECT d.dname,e.ename,e.sal 
+        FROM emp e,dept d
+        WHERE e.deptno = d.deptno 
+		AND (e.sal BETWEEN :minSalary AND :maxSalary) ;
+        EXEC SQL OPEN c3;
+		num_ret = 0;
+		
+		EXEC SQL WHENEVER NOT FOUND DO break;
+		for (;;)
+		{
+			EXEC SQL FETCH c3 INTO :emp_rec2;
+			print_rows1(sqlca.sqlerrd[2] - num_ret);
+			num_ret = sqlca.sqlerrd[2];        
+		}
+		if ((sqlca.sqlerrd[2] - num_ret) > 0)
+			print_rows1(sqlca.sqlerrd[2] - num_ret);
+
+		EXEC SQL CLOSE c3;
+		EXEC SQL COMMIT WORK RELEASE;
+		exit(EXIT_SUCCESS);
+
+    } 
+ 
+    else if (strcmp(argv[1],"commission1")==0 && strcmp(argv[3],"commission2")==0 )
+    {  
+		minCommission = atoi(argv[2]);
+		
+		maxCommission =  atoi(argv[4]);
+       
+		EXEC SQL DECLARE c4 CURSOR FOR
+        SELECT d.dname,e.ename,e.sal 
+        FROM emp e,dept d
+        WHERE e.deptno = d.deptno 
+		AND (NVL(e.comm,0) 
+		BETWEEN :minCommission AND :maxCommission) ;
+        
+		EXEC SQL OPEN c4;
+   
+		num_ret = 0;
+		
+		EXEC SQL WHENEVER NOT FOUND DO break;
+		for (;;)
+		{
+			EXEC SQL FETCH c4 INTO :emp_rec2;
+			print_rows1(sqlca.sqlerrd[2] - num_ret);
+			num_ret = sqlca.sqlerrd[2];         
+		}
+		if ((sqlca.sqlerrd[2] - num_ret) > 0)
+			print_rows1(sqlca.sqlerrd[2] - num_ret);
+
+		EXEC SQL CLOSE c4;
+		
+		EXEC SQL COMMIT WORK RELEASE;
+		
+		exit(EXIT_SUCCESS);
+    } 
+}
