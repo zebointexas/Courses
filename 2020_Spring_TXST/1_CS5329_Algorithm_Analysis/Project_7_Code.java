@@ -5,7 +5,6 @@ public class Project_7 {
     static int count_DP;
     static int count_noDP;
 
-
     public static void main(String args[]) {
 
         int arr_0[] = new int[] {30, 35, 15, 5, 10, 20, 25};
@@ -44,11 +43,6 @@ public class Project_7 {
         }
     }
 
-
-    //****** No DP | Matrix Ai has dimension p[i-1] x p[i] for i = 1..n
-    //****** No DP | Matrix Ai has dimension p[i-1] x p[i] for i = 1..n
-    //****** No DP | Matrix Ai has dimension p[i-1] x p[i] for i = 1..n
-    //****** No DP | Matrix Ai has dimension p[i-1] x p[i] for i = 1..n
     //****** No DP | Matrix Ai has dimension p[i-1] x p[i] for i = 1..n
     static int Project_7(int p[], int i, int j)
     {
@@ -74,10 +68,6 @@ public class Project_7 {
         return min;
     }
 
-    //************ with DP
-    //************ with DP
-    //************ with DP
-    //************ with DP
     //************ with DP
     static int Project_7_DP(int p[] /* array */) {
 
