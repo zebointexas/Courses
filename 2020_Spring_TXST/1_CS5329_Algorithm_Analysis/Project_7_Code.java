@@ -160,10 +160,6 @@ public class Project_7 {
             System.out.println("\n");
         }
 
-
-
-
-
         return m[1][n-1];
     }
 

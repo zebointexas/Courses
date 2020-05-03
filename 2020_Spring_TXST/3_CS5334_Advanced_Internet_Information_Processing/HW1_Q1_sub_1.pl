@@ -1,4 +1,4 @@
-my $filename = 'C:\Users\Dior\Desktop\HM_1\password.txt';
+my $filename = 'HW1_password.txt';
  
 open(FH, '<', $filename) or die $!;
 
@@ -32,9 +32,8 @@ while(<FH>){
 	   
   	   print "\n Round finish ------------- \n";	   
 }
+
 print "\n\n\n";
-print "******  Below is the answer for question (1) ******\n";
-print "******  Below is the answer for question (1) ******\n";
 print "******  Below is the answer for question (1) ******\n";
 print "******  Below is the answer for question (1) ******\n\n";
  

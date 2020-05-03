@@ -5,16 +5,14 @@ open(FH, '<', $filename) or die $!;
 sub trim { my $s = shift; $s =~ s/^\s+|\s+$//g; return $s }; 
  
 while(<FH>){
-   
-	 ##  @fields = split /[' ', ',', '\t' ]/, $_; 
-	  
+ 
 	   @firstLoop = split(',' , $_); 
 	   
 	   $firstname = $firstLoop[0];
 	   
 	   $secondPart = trim($firstLoop[1]); 
 	   
-	  # print $secondPart; 
+	   # print $secondPart; 
 	   print "\n";
 	   
 	   @secondLoop = split(/\s+/, $secondPart);
@@ -25,17 +23,7 @@ while(<FH>){
 	   $email = pop @secondLoop;
 	   
 	   $numuber = pop @secondLoop;
-	     
-	    
-	    
-	      
-	  # print $student;
-	  # print "--";
-	  # print $email;
-	  # print "--";	   
-	  # print $numuber; 
-	  # print "--"; 
-	   	  
+  
 	   @cur_all; 
  
            $cur = pop @secondLoop;	
@@ -46,17 +34,11 @@ while(<FH>){
 		 
 		   $cur = pop @secondLoop;	   
 	  }
-		
-	 
-			
-         
-          $cur_ans = "";
-        
+		 
+      $cur_ans = "";
          
 	  $cur = pop @cur_all;
-	  
-	  
-     
+	   
           while($cur ne "") {
 		  
 		   $len = @cur_all; 
@@ -73,9 +55,7 @@ while(<FH>){
 		   $cur = pop @cur_all;	
 	 
 	  }
-		   
-	   
-	 
+ 
 	  print $cur_ans."   :   ".$email;
 	 
 	  print "\n";
@@ -83,9 +63,7 @@ while(<FH>){
    
  
 print "\n";
-print "\n";
-print "\n";
-      
+ 
 close(FH);
 
 

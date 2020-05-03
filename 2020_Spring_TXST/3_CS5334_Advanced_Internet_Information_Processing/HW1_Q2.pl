@@ -8,7 +8,6 @@ sub trim { my $s = shift; $s =~ s/^\s+|\s+$//g; return $s };
  
 @fields = split /&/, $test; 
 
-  
 foreach ( @fields ) {
 	
 	## print "$_  \n";

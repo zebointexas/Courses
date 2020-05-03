@@ -259,9 +259,7 @@ public class Project_5 {
                 this.val = val;
             }
         }
-
-
-
+ 
         /* 2. create a ListNode array */
 
         ListNode[] nodes = new ListNode[59];
