@@ -1,0 +1,66 @@
+
+<HTML>
+<HEAD>
+<TITLE>AdvancedManpower Job Search</TITLE>
+</HEAD>
+
+<script language="JavaScript">
+
+function check_login(form){
+	if( form.loginId.value == "" ){
+		alert("You forgot to insert your login id");
+		return false;
+	}
+	else if( form.password.value == "" ){
+		alert("You forgto to insert your password");
+		return false;
+	}
+	else{
+		return true;
+	}
+}
+
+</script>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#0088ff" ALINK="#FF0000" VLINK="#CC0000">
+<center>	<h2> Members Login </h2> </center> 
+	<br>
+	<form action="http://glaciers.cs.txstate.edu:8080/peng/servlet/candidateLogin"
+		method=GET OnSubmit="return check_login( this )">
+	<!--form action="http://glaciers.cs.txstate.edu:8080/peng/jsp/home.jsp"
+		method=GET-->
+	Already have an account with AdvancedManpower? Login here:<br>
+	<center>
+	<table bgcolor="ffffcc">
+	<tr>
+		<td>
+		Login ID: <input type=text name="loginId">
+	<tr>
+		<td>
+		Password (your email address): <input type=password	name="password"> 
+	<tr>
+		<td>
+		<input type=submit value="Go">
+	</table>
+	</center>
+	</form>
+	<br>
+	Not a member yet?
+	<br>
+	Go to the <a href="http://glaciers.cs.txstate.edu:8080/peng/servlets/candidateRegister.html">Register</a> page.
+	<br>
+	<br>
+
+<center>
+<TABLE CELLSPACING="0" CELLPADDING="3" BORDER="0">
+<tr>
+	<td> <A href="http://glaciers.cs.txstate.edu:8080/peng/jsp/home.jsp"> Home </A>
+	<td> <A href="http://glaciers.cs.txstate.edu:8080/peng/servlets/jobSearch.html">Job Search </a>
+	<td> <A href="http://glaciers.cs.txstate.edu:8080/peng/servlets/employerLogin.html">Employers </A>
+	<td> <A href="http://glaciers.cs.txstate.edu:8080/peng/servlets/candidateLogin.html">Members </A>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
