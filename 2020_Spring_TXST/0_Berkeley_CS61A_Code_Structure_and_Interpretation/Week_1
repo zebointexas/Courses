@@ -1,0 +1,50 @@
+1. Every function and variable in Java is contained in some class.
+
+2. All classes, in turn, belong to some package. The Hello class belongs to the anonymous package.
+
+3. Static methods and variables are “one-of” things.
+
+4. Check if it is Prime: 
+
+   private static boolean isDivisible(int x, int k) {  
+        if (k >= x) // a "guard"
+                      return false;
+        else if (x % k == 0) // "%" means "remainder"
+                      return true;
+        else // if (k < x && x % k != 0)
+                      return isDivisible(x, k+1);
+    }
+    
+5. From Recursive to Iteration 
+   
+   /* Recursive */
+   if ( k >= x )
+          return false;
+   else if (x % k == 0)
+          return true;
+   else
+          return isDivisible(x, k+1 );
+          
+   /* Iteration - 1 */
+   while ( k < x ) {  
+      if (x % k == 0)
+          return true;
+      k = k+1 ;
+   }
+   return false;
+          
+   /* Iteration - 2 */       
+   for ( int k1 = k ; k1 < x ; k1 += 1 ) {
+      if (x % k1 == 0)
+      return true;
+   }
+   return false;
+   
+6.    ls -a     list all the files and folders in your current directory.
+
+7.    ls -l     list all the files and folders in your current directory, including hidden files.
+
+8.    cp        copy a file       cp lab1/original lab2/duplicate 
+
+9.    mv        move or rename a file    lab1/original lab2/original
+          

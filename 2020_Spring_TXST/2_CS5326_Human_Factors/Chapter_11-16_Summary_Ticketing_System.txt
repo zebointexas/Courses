@@ -1,0 +1,265 @@
+Chapter 11
+**********************************************************************
+***In-Depth Activity
+This activity is the first of five assignments that together go through the complete development
+lifecycle for an interactive product.
+The goal is to design and evaluate an interactive product for booking tickets for events
+such as concerts, music festivals, plays, and sporting events. Most venues and events have
+booking websites or apps already, and there are many ticket agencies that also provide reduced
+tickets and exclusive options, so there are plenty of existing products to research first. Carry
+out the following activities to discover requirements for this product:
+
+1. Identify and capture some user requirements for this product. This could be done in a
+number of ways. For example, observing friends or family using ticket agents, thinking
+about your own experience of purchasing tickets, studying websites for booking tickets,
+interviewing friends and family about their experiences, and so on.
+
+2. Based on the information you glean about potential users, choose two different user profiles and produce one persona and one main scenario for each, capturing how the user is expected to interact with the product.
+
+3. Using the data gathered in part 1 and your subsequent analysis, identify different kinds of
+requirements for the product, according to the headings introduced in section 11.3. 
+
+Write up the requirements using a format similar to the atomic requirements shell shown in
+Figure 11.1 or in the style of user stories.
+
+***Summary
+This chapter examined the requirements activity in greater detail. The data gathering techniques introduced in Chapter 8 are used here in various combinations in the requirements activity. 
+
+In addition, contextual inquiry, studying documentation, and researching similar products are commonly used techniques. Personas and scenarios help to bring data and requirements to life, and in combination they can be used to explore the user experience and product functionality. Use cases and essential use cases are helpful techniques for documenting the findings from data gathering sessions.
+
+Key Points
+• A requirement is a statement about an intended product that specifies what it is expected
+to do or how it will perform.
+• Articulating requirements and defining what needs to be built avoids miscommunication
+and supports technical developers and allows users to contribute more effectively.
+• There are different kinds of requirements: functional, data, environmental (context of use),
+user characteristics, usability goals, and user experience goals.
+• Scenarios provide a story-based narrative to explore existing behavior, potential use of new
+products under development, and futuristic visions of technology use.
+• Personas capture characteristics of users that are relevant to the product under development, synthesized from data gathering sessions.
+• Scenarios and personas together can be used throughout the product lifecycle.
+• Use cases capture details about an existing or imagined interaction between users and
+the product.
+
+Chapter 12
+**********************************************************************
+In-Depth Activity
+This in-depth activity builds upon the requirements activities related to the booking facility
+introduced at the end of Chapter 11.
+
+1. Based on the information gleaned from the activity in Chapter 11, suggest three different
+conceptual models for this system. Consider each of the aspects of a conceptual model
+discussed in this chapter: interface metaphor, interaction type, interface type, activities it
+will support, functions, relationships between functions, and information requirements. Of
+these conceptual models, decide which one seems most appropriate and articulate the
+reasons why.
+
+2. Using the scenarios generated for the online booking facility, produce a storyboard for the
+task of booking a ticket for one of the conceptual models in step 1. Show it to two or three
+potential users and record some informal feedback.
+
+3. Considering the product’s concrete design, sketch out the application’s initial interface.
+Consider the design issues introduced in Chapter 7 for the chosen interface type. Write one
+or two sentences explaining your choices and consider whether the choice is a usability
+consideration or a user experience consideration.
+
+4. Sketch out an experience map for the product. Use the scenarios and personas you generated previously to explore the user’s experience. In particular, identify any new interaction issues that had not been considered previously, and suggest what could be done to
+address them.
+
+5. How does the product differ from applications that typically might emerge from the maker movement? Do software development kits have a role? If so, what is that role? If not, why not?
+
+Summary
+This chapter explored the activities of design, prototyping, and construction. Prototyping and scenarios are used throughout the design process to test ideas for feasibility and user acceptance. We have looked at different forms of prototyping, and the activities have encouraged you to think about and apply prototyping techniques in the design process.
+
+Key points
+• Prototyping may be low fidelity (such as paper-based) or high fidelity (such as softwarebased).
+• High-fidelity prototypes may be vertical or horizontal.
+• Low-fidelity prototypes are quick and easy to produce and modify, and they are used in the early stages of design.
+• Ready-made software and hardware components support the creation of prototypes.
+• There are two aspects to the design activity: conceptual design and concrete design.
+• Conceptual design develops an outline of what people can do with a product and what concepts are needed to understand how to interact with it, while concrete design specifies the details of the design such as layout and navigation.
+• We have explored three approaches to help you develop an initial conceptual model: interface metaphors, interaction styles, and interface styles.
+• An initial conceptual model may be expanded by considering which functions the product will perform (and which the user will perform), how those functions are related, and what information is required to support them.
+• Scenarios and prototypes can be used effectively in design to explore ideas.
+• Physical computing kits and software development kits facilitate the transition from design
+to construction.
+
+
+Chapter 13
+**********************************************************************
+In-Depth Activity
+This in-depth activity continues the work begun on the booking facility introduced at the end
+of Chapter 11.
+
+1. Assume that you will produce the online booking facility using an agile approach.
+a. Suggest the type of user research to conduct before iteration cycles begin.
+b. Prioritize requirements for the product according to business value, in particular, which
+requirements are likely to provide the greatest business benefit, and sketch out the UX
+design work you would expect to undertake during the first four iteration cycles, that
+is, Cycle 0 and Cycles 1 to 3.
+
+2. Using one of the mock-up tools introduced, generate a mock-up of the product’s initial
+interface, as developed in the assignment for Chapter 12.
+
+3. Using one of the patterns websites listed previously, identify suitable interaction patterns
+for elements of the product and develop a software-based prototype that incorporates all
+of the feedback and the results of the user experience mapping achieved at the end of
+Chapter 12. If you do not have experience in using any of these, create a few HTML web
+pages to represent the basic structure of the product.
+
+Summary
+This chapter explored some of the issues faced when interaction design is carried out in practice. The move toward agile development has led to a rethinking of how UX design techniques and methods may be integrated into and around agile’s tight iterations. The existence of pattern and code libraries, together with open source components and automated tools, means that interactive prototypes with a coherent and consistent design can be generated quickly and easily, ready for demonstration and evaluation.
+
+Key Points
+• AgileUX refers to approaches that integrate UX design activities with an agile approach to
+product development.
+• A move to agileUX requires a change in mind-set because of repeated reprioritization of
+requirements and short timeboxed implementation, which seeks to avoid wasted effort.
+• AgileUX requires a rethinking of UX design activities: when to perform them, how much
+detail to undertake and when, and how to feed back results into implementation cycles.
+• Design patterns present a solution to a problem in a context, and there are many UX design
+pattern libraries available.
+• Dark patterns are designed to trick users into making choices that have unexpected consequences, for instance, by automatically signing them up for marketing newsletters.
+• Open source resources, such as those on GitHub, make the development of standard applications and libraries with consistent interfaces easier and quicker.
+• A variety of digital tools to support interaction design in practice are available.
+ 
+
+Chapter 14
+**********************************************************************
+In-Depth Activity
+In this activity, think about the case studies and reflect on the evaluation methods used.
+1. For the two case studies discussed in this chapter, think about the role of evaluation in the design of the system and note the artifacts that were evaluated: when during the design were they evaluated, which methods were used, and what was learned from the evaluations? Note any issues of particular interest. You may find that constructing a table like the
+one shown here is a helpful approach.
+	- Name of the study or artifact evaluated
+	- When during the design the evaluation occurred?
+	- How controlled was the study and what role did users have?
+	- Which methods were used?
+	- What kind of data was collected, and how was it analyzed?
+	- What was learned from the study?
+	- Notable issues
+2. What were the main constraints that influenced the evaluations?
+3. How did the use of different methods build on and complement each other to give a
+broader picture of the evaluations?
+4. Which parts of the evaluations were directed at usability goals and which at user experience goals?
+
+Summary
+The goal of this chapter was to introduce the main approaches to evaluation and the methods typically used. These will be revisited in greater depth in the next two chapters. This chapter stressed how evaluation is done throughout design by collecting information about users’ or potential users’ experiences when interacting with a prototype, a computer system, a component of a computer system, or a design artifact (such as a screen sketch) to improve its design.
+
+The pros and cons of running lab-based evaluations versus field studies were outlined in terms of participant reach, cost, effort, constraints, and the types of results that can be elicited.
+
+Choosing which approach to use will depend on the goals of the evaluation, the researcher’s or evaluator’s expectations, and the resources available to them.
+
+Crowdsourcing was presented as a creative way of involving a wide range of people with different ideas and skills. Finally, we briefly mentioned the ethical issues relating to how evaluation participants are treated and their rights to privacy. We also raised questions about data interpretation including the need to be aware of biases, reliability, data and ecological validity,
+and the scope of the study.
+
+Key Points
+• Evaluation and design are closely integrated.
+• Some of the same data gathering methods are used in evaluation as for discovering requirements and identifying users’ needs, for instance, observation, interviews, and questionnaires.
+• Evaluations can be done in controlled settings such as labs, less-controlled field settings, or
+where users are not present.
+• Usability testing and experiments involve a high level of control over both what users do
+and what is tested, whereas field and in-the-wild evaluations typically impose little or no
+control on participants.
+• Different methods are usually combined to provide different perspectives within a study.
+• Participants need to be made aware of their rights. This is often done through informed
+consent forms.
+• It is important not to over-generalize findings from an evaluation
+
+
+Chapter 15
+**********************************************************************
+In-Depth Activity
+This in-depth activity continues work on the online booking facility introduced at the end of
+Chapter 11 and continued in Chapter 12. 
+
+Using any of the prototypes that you have developed to represent the basic structure of your product, follow these instructions to evaluate it:
+
+1. Based on your knowledge of the requirements for this system, develop a standard task (for
+instance, booking two seats for a particular performance).
+
+2. Consider the relationship between yourself and your participants. Do you need to use an
+informed consent form? If so, prepare a suitable informed consent form. Justify
+your decision.
+
+3. Select three typical users, who can be friends or colleagues, and ask them to do the task
+using your prototype.
+
+4. Note the problems that each user encounters. If possible, time their performance. (If you
+happen to have a camera or a smartphone with a camera, you could film each participant.)
+
+5. Since the system is not actually implemented, you cannot study it in typical settings of use.
+However, imagine that you are planning a controlled usability study and a field study. How
+would you do it? What kinds of things would you need to take into account? What sort of
+data would you collect, and how would you analyze it?
+
+6. What are the main benefits and problems in this case with doing a controlled study versus
+studying the product in a natural setting?
+
+Summary
+This chapter described evaluation studies in different settings. It focused on controlled laboratory studies, experiments, and field studies in natural settings. A study of the iPad when it first came out and a second study conducted a year later was presented as an example of usability testing. 
+
+Experimental design was then discussed that involves testing a hypothesis in a controlled research lab. The chapter ended with a discussion of field studies in which participants used prototypes and new technologies in natural settings. The Painpad example involved evaluating how patients in two hospitals, who were recovering from surgery, used a mobile device designed to enable them to self-monitor their pain levels throughout the day.
+
+Key differences between usability testing, experiments, and field studies include the location of the study—usability lab or makeshift usability lab (and living lab or online as discussed in Chapter 14), research lab, or natural environment—and how much control is imposed. At one end of the spectrum are experiments and laboratory testing, and at the other are in-thewild field studies. Most studies use a combination of different methods, and designers often have to adapt their methods to cope with unusual new circumstances created when evaluating the new systems being developed.
+
+Key points
+• Usability testing usually takes place in usability labs or temporary makeshift labs. These
+labs enable designers and researchers to control the test setting. Versions of usability testing
+are also conducted remotely, online, and in living labs.
+• Usability testing focuses on performance measures, such as how long and how many errors are made, when completing a set of predefined tasks. Direct and indirect observation (video and keystroke logging) is conducted and supplemented by user satisfaction questionnaires and interviews.
+• Mobile and remote testing systems have been developed that are more portable and affordable than usability labs. Many contain mobile eye-tracking and face recognition systems and other devices. Many companies continue to use usability labs because they provide a venue for the whole team to come together to observe and discuss how users are responding
+to the systems being developed.
+• Experiments seek to test a hypothesis by manipulating certain variables while keeping
+others constant.
+• The researcher controls independent variable(s) to measure dependent variable(s).
+• Field studies are carried out in natural settings. They seek to discover how people interact
+with technology in the real world.
+• Field studies that involve the deployment of prototypes or technologies in natural settings
+may also be referred to as in-the-wild studies.
+• Sometimes the findings of a field study are unexpected, especially for in-the-wild studies in
+which the goal is typically to explore how novel technologies are used by participants
+in their own homes, places of work, or outside.
+
+
+
+Chapter 16
+**********************************************************************
+In-Depth Activity
+This in-depth activity continues the work you did on the new interactive product for booking
+tickets at the end of Chapters 11, 12, and 15. The goal of this assignment is to evaluate the
+prototypes produced in the assignment from Chapter 12 by using heuristic evaluation.
+
+1. Decide on an appropriate set of heuristics and perform a heuristic evaluation of one of the prototypes that you designed in Chapter 12.
+2. Based on this evaluation, redesign the prototype to overcome the problems that you encountered.
+3. Compare the findings from this evaluation with those from the usability testing in the previous chapter. What differences do you observe? Which evaluation approach do you prefer and why?
+
+Summary
+This chapter presented inspection evaluation methods, focusing on heuristic evaluation and walk-throughs, which are usually done by specialists (often referred to as experts), who role-play users’ interactions with designs, prototypes, and specifications. They use their knowledge of the kinds of problems that users typically encounter, and then they offer their opinions. Heuristic evaluation and walk-throughs offer a structure to guide the evaluation process.
+
+Analytics, in which users’ interactions are logged, are often performed remotely and without users being aware that their interactions are being tracked. Large volumes of data are collected, anonymized, and statistically analyzed using specially developed software services, such as Google Analytics. The analysis provides information about how a product is used, for
+instance, how different versions of a website or prototype perform, or which parts of a website are seldom used—possibly because of poor usability design or lack of appeal. 
+
+Data are often presented visually so that it is easier to see trends and interpret the results.
+
+A/B testing is another form of remote testing. Fundamentally, A/B testing is a controlled experiment in which two or more dependent variables are investigated using large numbers of participants who are randomly allocated to the different experimental conditions. Small differences in the UX design of a home page can, for example, be tested using A/B testing. For
+sites with very large populations of users, such as popular social media sites, even small differences in design can strongly impact the number of users who use the application. Fitts’ law is an example of an evaluation method that can be used to predict user performance by determining whether a proposed interface design or keypad layout will be optimal.
+
+Typically, Fitts’ law is used to compare different design layouts for virtual or physical objects, such as buttons on a device or screen.
+
+Designers and researchers often find that they have to modify these methods, as they do for those described in the previous chapter, for use with the wide range of products that have come onto the market since they were originally developed.
+
+Key Points
+• Inspections can be used for evaluating a range of representations including requirements, mockups, prototypes, or products.
+• User testing and heuristic evaluation often reveal different usability problems.
+• Other types of inspections used in UX design include pluralistic and cognitive walk-throughs.
+• Walk-throughs are a fine-grained, focused methods that are suitable for evaluating small
+parts of a product.
+• Analytics involve collecting data about user interactions to identify how users use a website or product and which parts are underused.
+• When applied to websites, analytics are often referred to as web analytics. Similarly, when
+applied to learning systems, they are referred to as learning analytics.
+• Fitts’ law is a predictive model that has been used in HCI to evaluate keypress sequences
+for handheld devices.
+ 
+
+
+ 

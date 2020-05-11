@@ -1,4 +1,6 @@
-my $filename = 'C:\Users\Dior\Desktop\HM_1\password.txt';
+#!/usr/local/bin/perl/zebo
+
+my $filename = 'E:\GitHub\courses\2020_Spring_TXST\3_CS5334_Advanced_Internet_Information_Processing\HW1_password.txt';
  
 open(FH, '<', $filename) or die $!;
 
