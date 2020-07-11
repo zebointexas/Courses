@@ -1,0 +1,33 @@
+什么是找工作? 
+- Bug-Free 
+- OOD/System Design 
+- Concurrency 
+- 语言特性本身
+- How to get interview opportunity in current situation 
+- 英文沟通描述能力
+- Prepare yourself in every details (E.G., set-up your phont message box)
+
+Communication: 面试英文口语
+- Self-Introduction
+- Project-Description 
+- Problem description 
+- Email communication
+
+职业规划
+- 选组
+- Keep learning skills 
+- 工作之后如何发展自己
+- etc. 
+
+题目讨论
+1. Given an array stored in Stack 1, how to sort the numbers by using additional two stacks (will be discussed later in stack class)
+2. Follow up, what if only 1 additional stack can be used? 
+
+Answer for 1:
+
+Stack1|| 1 4 3 6         
+Stack2||  			  来一个 global_min，每一轮更新 global_min
+Stack3||
+
+Answer for 2:
+好的，我知道怎么做了，原理跟1一样，可能就是要多循环几次
