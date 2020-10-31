@@ -1,0 +1,1846 @@
+Last login: Tue Aug  4 14:52:31 on ttys001
+dior@MacBook-Pro ~ % cd /Users/dior/Desktop/WeatherServiceCode 
+dior@MacBook-Pro WeatherServiceCode % ls
+WeatherBean.class		WeatherServiceClient.java
+WeatherBean.java		WeatherServiceCode.iml
+WeatherCellRenderer.class	WeatherServiceServer.class
+WeatherCellRenderer.java	WeatherServiceServer.java
+WeatherItem.class		imagenames.properties
+WeatherItem.java		imagenames.properties.bak
+WeatherListModel.class		images
+WeatherListModel.java		policy-all.txt
+WeatherService.class		policy1-file.txt
+WeatherService.java		rnusers.c
+WeatherServiceClient.class
+dior@MacBook-Pro WeatherServiceCode % rmiregistry
+
+^C%                                                                             dior@MacBook-Pro WeatherServiceCode % rmiregistry 9999&
+[1] 21171
+dior@MacBook-Pro WeatherServiceCode % java -Djava.security.policy=policy1-file.txt WeatherServiceServer
+Initializing WeatherService...
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=01&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS01
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 1 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3ABILENE TX       85  68   .08   SUNNY   97/74   PTCLDY 100/76
+Update weather information...4
+ABILENE TX       --UNNY --85 
+City:ABILENE TX, condition:SUNNY,temp:85  68
+Update weather bean: City=ABILENE TXtemp=85  68condition=SUNNY
+AKRON CANTON     --HWRS --82 
+City:AKRON CANTON, condition:SHWRS,temp:82  66
+Update weather bean: City=AKRON CANTONtemp=82  66condition=SHWRS
+ALBANY NY        --AIN  --82 
+City:ALBANY NY, condition:RAIN,temp:82  67
+Update weather bean: City=ALBANY NYtemp=82  67condition=RAIN
+ALBUQUERQUE      --UNNY --92 
+City:ALBUQUERQUE, condition:SUNNY,temp:92  69
+Update weather bean: City=ALBUQUERQUEtemp=92  69condition=SUNNY
+ALLENTOWN        --HWRS --86 
+City:ALLENTOWN, condition:SHWRS,temp:86  71
+Update weather bean: City=ALLENTOWNtemp=86  71condition=SHWRS
+AMARILLO         --UNNY --89 
+City:AMARILLO, condition:SUNNY,temp:89  63
+Update weather bean: City=AMARILLOtemp=89  63condition=SUNNY
+ANCHORAGE        --TCLDY--67 
+City:ANCHORAGE, condition:PTCLDY,temp:67  52
+Update weather bean: City=ANCHORAGEtemp=67  52condition=PTCLDY
+ASHEVILLE        --STRMS--75 
+City:ASHEVILLE, condition:TSTRMS,temp:75  63
+Update weather bean: City=ASHEVILLEtemp=75  63condition=TSTRMS
+ATLANTA          --STRMS--89 
+City:ATLANTA, condition:TSTRMS,temp:89  68
+Update weather bean: City=ATLANTAtemp=89  68condition=TSTRMS
+ATLANTIC CITY    --STRMS--92 
+City:ATLANTIC CITY, condition:TSTRMS,temp:92  77
+Update weather bean: City=ATLANTIC CITYtemp=92  77condition=TSTRMS
+AUSTIN          1--TCLDY--01 
+City:AUSTIN, condition:PTCLDY,temp:101  73
+Update weather bean: City=AUSTINtemp=101  73condition=PTCLDY
+BALTIMORE        --HWRS --89 
+City:BALTIMORE, condition:SHWRS,temp:89  70
+Update weather bean: City=BALTIMOREtemp=89  70condition=SHWRS
+BATON ROUGE      --UNNY --93 
+City:BATON ROUGE, condition:SUNNY,temp:93  74
+Update weather bean: City=BATON ROUGEtemp=93  74condition=SUNNY
+BILLINGS         --UNNY --93 
+City:BILLINGS, condition:SUNNY,temp:93  60
+Update weather bean: City=BILLINGStemp=93  60condition=SUNNY
+BIRMINGHAM       --STRMS--90 
+City:BIRMINGHAM, condition:TSTRMS,temp:90  70
+Update weather bean: City=BIRMINGHAMtemp=90  70condition=TSTRMS
+BISMARCK         --STRMS--83 
+City:BISMARCK, condition:TSTRMS,temp:83  55
+Update weather bean: City=BISMARCKtemp=83  55condition=TSTRMS
+BOISE            --UNNY --93 
+City:BOISE, condition:SUNNY,temp:93  61
+Update weather bean: City=BOISEtemp=93  61condition=SUNNY
+BOSTON           --HWRS --92 
+City:BOSTON, condition:SHWRS,temp:92  70
+Update weather bean: City=BOSTONtemp=92  70condition=SHWRS
+BRIDGEPORT       --HWRS --89 
+City:BRIDGEPORT, condition:SHWRS,temp:89  72
+Update weather bean: City=BRIDGEPORTtemp=89  72condition=SHWRS
+BROWNSVILLE      --TCLDY--93 
+City:BROWNSVILLE, condition:PTCLDY,temp:93  76
+Update weather bean: City=BROWNSVILLEtemp=93  76condition=PTCLDY
+BUFFALO          --HWRS --83 
+City:BUFFALO, condition:SHWRS,temp:83  68
+Update weather bean: City=BUFFALOtemp=83  68condition=SHWRS
+BURLINGTON VT    --HWRS --81 
+City:BURLINGTON VT, condition:SHWRS,temp:81  65
+Update weather bean: City=BURLINGTON VTtemp=81  65condition=SHWRS
+CARIBOU          --HWRS --84 
+City:CARIBOU, condition:SHWRS,temp:84  59
+Update weather bean: City=CARIBOUtemp=84  59condition=SHWRS
+CASPER           --UNNY --93 
+City:CASPER, condition:SUNNY,temp:93  51
+Update weather bean: City=CASPERtemp=93  51condition=SUNNY
+CHARLESTON SC    --STRMS--83 
+City:CHARLESTON SC, condition:TSTRMS,temp:83  70
+Update weather bean: City=CHARLESTON SCtemp=83  70condition=TSTRMS
+CHARLESTON WV    --STRMS--82 
+City:CHARLESTON WV, condition:TSTRMS,temp:82  67
+Update weather bean: City=CHARLESTON WVtemp=82  67condition=TSTRMS
+CHARLOTTE        --UNNY --88 
+City:CHARLOTTE, condition:SUNNY,temp:88  69
+Update weather bean: City=CHARLOTTEtemp=88  69condition=SUNNY
+CHATTANOOGA      --STRMS--91 
+City:CHATTANOOGA, condition:TSTRMS,temp:91  72
+Update weather bean: City=CHATTANOOGAtemp=91  72condition=TSTRMS
+CHEYENNE         --HWRS --86 
+City:CHEYENNE, condition:SHWRS,temp:86  57
+Update weather bean: City=CHEYENNEtemp=86  57condition=SHWRS
+CHICAGO          --TCLDY--72 
+City:CHICAGO, condition:PTCLDY,temp:72  59
+Update weather bean: City=CHICAGOtemp=72  59condition=PTCLDY
+CINCINNATI       --HWRS --82 
+City:CINCINNATI, condition:SHWRS,temp:82  63
+Update weather bean: City=CINCINNATItemp=82  63condition=SHWRS
+CLEVELAND        --HWRS --80 
+City:CLEVELAND, condition:SHWRS,temp:80  65
+Update weather bean: City=CLEVELANDtemp=80  65condition=SHWRS
+COLORADO SPGS    --STRMS--77 
+City:COLORADO SPGS, condition:TSTRMS,temp:77  59
+Update weather bean: City=COLORADO SPGStemp=77  59condition=TSTRMS
+COLUMBIA SC      --STRMS--88 
+City:COLUMBIA SC, condition:TSTRMS,temp:88  69
+Update weather bean: City=COLUMBIA SCtemp=88  69condition=TSTRMS
+COLUMBUS GA      --TCLDY--95 
+City:COLUMBUS GA, condition:PTCLDY,temp:95  71
+Update weather bean: City=COLUMBUS GAtemp=95  71condition=PTCLDY
+COLUMBUS OH      --HWRS --82 
+City:COLUMBUS OH, condition:SHWRS,temp:82  64
+Update weather bean: City=COLUMBUS OHtemp=82  64condition=SHWRS
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 1(st/rd/th) time update!!
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=02&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS02
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 2 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3CONCORD NH       89  66         RAIN    79/66   SUNNY   86/58
+Update weather information...4
+CONCORD NH       --AIN  --89 
+City:CONCORD NH, condition:RAIN,temp:89  66
+Update weather bean: City=CONCORD NHtemp=89  66condition=RAIN
+CORPUS CHRISTI   --TCLDY--97 
+City:CORPUS CHRISTI, condition:PTCLDY,temp:97  74
+Update weather bean: City=CORPUS CHRISTItemp=97  74condition=PTCLDY
+DALLAS FT WORTH  --UNNY --93 
+City:DALLAS FT WORTH, condition:SUNNY,temp:93  71
+Update weather bean: City=DALLAS FT WORTHtemp=93  71condition=SUNNY
+DAYTON           --HWRS --82 
+City:DAYTON, condition:SHWRS,temp:82  64
+Update weather bean: City=DAYTONtemp=82  64condition=SHWRS
+DAYTONA BEACH    --STRMS--93 
+City:DAYTONA BEACH, condition:TSTRMS,temp:93  77
+Update weather bean: City=DAYTONA BEACHtemp=93  77condition=TSTRMS
+DENVER           --STRMS--90 
+City:DENVER, condition:TSTRMS,temp:90  61
+Update weather bean: City=DENVERtemp=90  61condition=TSTRMS
+DES MOINES       --TCLDY--76 
+City:DES MOINES, condition:PTCLDY,temp:76  55
+Update weather bean: City=DES MOINEStemp=76  55condition=PTCLDY
+DETROIT          --HWRS --84 
+City:DETROIT, condition:SHWRS,temp:84  65
+Update weather bean: City=DETROITtemp=84  65condition=SHWRS
+DULUTH           --UNNY --71 
+City:DULUTH, condition:SUNNY,temp:71  53
+Update weather bean: City=DULUTHtemp=71  53condition=SUNNY
+EL PASO          --TCLDY--99 
+City:EL PASO, condition:PTCLDY,temp:99  78
+Update weather bean: City=EL PASOtemp=99  78condition=PTCLDY
+ELKINS           --STRMS--77 
+City:ELKINS, condition:TSTRMS,temp:77  63
+Update weather bean: City=ELKINStemp=77  63condition=TSTRMS
+ERIE             --HWRS --85 
+City:ERIE, condition:SHWRS,temp:85  68
+Update weather bean: City=ERIEtemp=85  68condition=SHWRS
+EUGENE           --TCLDY--87 
+City:EUGENE, condition:PTCLDY,temp:87  57
+Update weather bean: City=EUGENEtemp=87  57condition=PTCLDY
+EVANSVILLE       --OCLDY--83 
+City:EVANSVILLE, condition:MOCLDY,temp:83  64
+Update weather bean: City=EVANSVILLEtemp=83  64condition=MOCLDY
+FAIRBANKS        --HWRS --64 
+City:FAIRBANKS, condition:SHWRS,temp:64  55
+Update weather bean: City=FAIRBANKStemp=64  55condition=SHWRS
+FARGO            --UNNY --75 
+City:FARGO, condition:SUNNY,temp:75  55
+Update weather bean: City=FARGOtemp=75  55condition=SUNNY
+FLAGSTAFF        --UNNY --86 
+City:FLAGSTAFF, condition:SUNNY,temp:86  47
+Update weather bean: City=FLAGSTAFFtemp=86  47condition=SUNNY
+FLINT            --HWRS --78 
+City:FLINT, condition:SHWRS,temp:78  59
+Update weather bean: City=FLINTtemp=78  59condition=SHWRS
+FORT SMITH       --UNNY --89 
+City:FORT SMITH, condition:SUNNY,temp:89  62
+Update weather bean: City=FORT SMITHtemp=89  62condition=SUNNY
+FORT WAYNE       --TCLDY--82 
+City:FORT WAYNE, condition:PTCLDY,temp:82  63
+Update weather bean: City=FORT WAYNEtemp=82  63condition=PTCLDY
+FRESNO          1--UNNY --00 
+City:FRESNO, condition:SUNNY,temp:100  71
+Update weather bean: City=FRESNOtemp=100  71condition=SUNNY
+GOODLAND         --STRMS--78 
+City:GOODLAND, condition:TSTRMS,temp:78  59
+Update weather bean: City=GOODLANDtemp=78  59condition=TSTRMS
+GRAND JUNCTION  1--UNNY --02 
+City:GRAND JUNCTION, condition:SUNNY,temp:102  72
+Update weather bean: City=GRAND JUNCTIONtemp=102  72condition=SUNNY
+GRAND RAPIDS     --HWRS --78 
+City:GRAND RAPIDS, condition:SHWRS,temp:78  57
+Update weather bean: City=GRAND RAPIDStemp=78  57condition=SHWRS
+GREAT FALLS      --UNNY --89 
+City:GREAT FALLS, condition:SUNNY,temp:89  53
+Update weather bean: City=GREAT FALLStemp=89  53condition=SUNNY
+GREEN BAY        --TCLDY--70 
+City:GREEN BAY, condition:PTCLDY,temp:70  48
+Update weather bean: City=GREEN BAYtemp=70  48condition=PTCLDY
+GREENSBORO       --STRMS--84 
+City:GREENSBORO, condition:TSTRMS,temp:84  68
+Update weather bean: City=GREENSBOROtemp=84  68condition=TSTRMS
+HARRISBURG       --AIN  --87 
+City:HARRISBURG, condition:RAIN,temp:87  71
+Update weather bean: City=HARRISBURGtemp=87  71condition=RAIN
+HARTFORD SPGFLD  --HWRS --92 
+City:HARTFORD SPGFLD, condition:SHWRS,temp:92  70
+Update weather bean: City=HARTFORD SPGFLDtemp=92  70condition=SHWRS
+HELENA           --UNNY --93 
+City:HELENA, condition:SUNNY,temp:93  59
+Update weather bean: City=HELENAtemp=93  59condition=SUNNY
+HONOLULU         --UNNY --90 
+City:HONOLULU, condition:SUNNY,temp:90  78
+Update weather bean: City=HONOLULUtemp=90  78condition=SUNNY
+HOUSTON INTCNTL  --STRMS--98 
+City:HOUSTON INTCNTL, condition:TSTRMS,temp:98  81
+Update weather bean: City=HOUSTON INTCNTLtemp=98  81condition=TSTRMS
+HUNTSVILLE AL    --STRMS--91 
+City:HUNTSVILLE AL, condition:TSTRMS,temp:91  70
+Update weather bean: City=HUNTSVILLE ALtemp=91  70condition=TSTRMS
+INDIANAPOLIS     --OCLDY--79 
+City:INDIANAPOLIS, condition:MOCLDY,temp:79  63
+Update weather bean: City=INDIANAPOLIStemp=79  63condition=MOCLDY
+JACKSON MS       --TCLDY--93 
+City:JACKSON MS, condition:PTCLDY,temp:93  70
+Update weather bean: City=JACKSON MStemp=93  70condition=PTCLDY
+JACKSONVILLE     --STRMS--91 
+City:JACKSONVILLE, condition:TSTRMS,temp:91  76
+Update weather bean: City=JACKSONVILLEtemp=91  76condition=TSTRMS
+JUNEAU           --AIN  --61 
+City:JUNEAU, condition:RAIN,temp:61  53
+Update weather bean: City=JUNEAUtemp=61  53condition=RAIN
+KANSAS CITY      --TCLDY--76 
+City:KANSAS CITY, condition:PTCLDY,temp:76  53
+Update weather bean: City=KANSAS CITYtemp=76  53condition=PTCLDY
+KEY WEST         --STRMS--90 
+City:KEY WEST, condition:TSTRMS,temp:90  85
+Update weather bean: City=KEY WESTtemp=90  85condition=TSTRMS
+KNOXVILLE        --STRMS--82 
+City:KNOXVILLE, condition:TSTRMS,temp:82  68
+Update weather bean: City=KNOXVILLEtemp=82  68condition=TSTRMS
+LAKE CHARLES     --STRMS--95 
+City:LAKE CHARLES, condition:TSTRMS,temp:95  76
+Update weather bean: City=LAKE CHARLEStemp=95  76condition=TSTRMS
+LANSING          --HWRS --79 
+City:LANSING, condition:SHWRS,temp:79  56
+Update weather bean: City=LANSINGtemp=79  56condition=SHWRS
+LAS VEGAS       1--UNNY --08 
+City:LAS VEGAS, condition:SUNNY,temp:108  84
+Update weather bean: City=LAS VEGAStemp=108  84condition=SUNNY
+LEXINGTON        --STRMS--84 
+City:LEXINGTON, condition:TSTRMS,temp:84  61
+Update weather bean: City=LEXINGTONtemp=84  61condition=TSTRMS
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 1(st/rd/th) time update!!
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=03&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS03
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 3 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3LINCOLN          76  49         PTCLDY  79/58   PTCLDY  80/61
+Update weather information...4
+LINCOLN          --TCLDY--76 
+City:LINCOLN, condition:PTCLDY,temp:76  49
+Update weather bean: City=LINCOLNtemp=76  49condition=PTCLDY
+LITTLE ROCK      --TCLDY--89 
+City:LITTLE ROCK, condition:PTCLDY,temp:89  68
+Update weather bean: City=LITTLE ROCKtemp=89  68condition=PTCLDY
+LOS ANGELES      --TCLDY--84 
+City:LOS ANGELES, condition:PTCLDY,temp:84  67
+Update weather bean: City=LOS ANGELEStemp=84  67condition=PTCLDY
+LOUISVILLE       --STRMS--84 
+City:LOUISVILLE, condition:TSTRMS,temp:84  66
+Update weather bean: City=LOUISVILLEtemp=84  66condition=TSTRMS
+LUBBOCK          --TCLDY--88 
+City:LUBBOCK, condition:PTCLDY,temp:88  68
+Update weather bean: City=LUBBOCKtemp=88  68condition=PTCLDY
+MACON            --UNNY --99 
+City:MACON, condition:SUNNY,temp:99  68
+Update weather bean: City=MACONtemp=99  68condition=SUNNY
+MADISON          --TCLDY--66 
+City:MADISON, condition:PTCLDY,temp:66  52
+Update weather bean: City=MADISONtemp=66  52condition=PTCLDY
+MEDFORD          --TCLDY--94 
+City:MEDFORD, condition:PTCLDY,temp:94  66
+Update weather bean: City=MEDFORDtemp=94  66condition=PTCLDY
+MEMPHIS          --OCLDY--91 
+City:MEMPHIS, condition:MOCLDY,temp:91  71
+Update weather bean: City=MEMPHIStemp=91  71condition=MOCLDY
+MIAMI BEACH      --STRMS--89 
+City:MIAMI BEACH, condition:TSTRMS,temp:89  78
+Update weather bean: City=MIAMI BEACHtemp=89  78condition=TSTRMS
+MIDLAND ODESSA   --UNNY --92 
+City:MIDLAND ODESSA, condition:SUNNY,temp:92  69
+Update weather bean: City=MIDLAND ODESSAtemp=92  69condition=SUNNY
+MILWAUKEE        --TCLDY--67 
+City:MILWAUKEE, condition:PTCLDY,temp:67  58
+Update weather bean: City=MILWAUKEEtemp=67  58condition=PTCLDY
+MPLS ST PAUL     --UNNY --74 
+City:MPLS ST PAUL, condition:SUNNY,temp:74  54
+Update weather bean: City=MPLS ST PAULtemp=74  54condition=SUNNY
+MISSOULA         --UNNY --89 
+City:MISSOULA, condition:SUNNY,temp:89  50
+Update weather bean: City=MISSOULAtemp=89  50condition=SUNNY
+MOBILE           --UNNY --92 
+City:MOBILE, condition:SUNNY,temp:92  71
+Update weather bean: City=MOBILEtemp=92  71condition=SUNNY
+MONTGOMERY       --STRMS--94 
+City:MONTGOMERY, condition:TSTRMS,temp:94  70
+Update weather bean: City=MONTGOMERYtemp=94  70condition=TSTRMS
+NASHVILLE        --STRMS--89 
+City:NASHVILLE, condition:TSTRMS,temp:89  70
+Update weather bean: City=NASHVILLEtemp=89  70condition=TSTRMS
+NEW ORLEANS      --UNNY --96 
+City:NEW ORLEANS, condition:SUNNY,temp:96  76
+Update weather bean: City=NEW ORLEANStemp=96  76condition=SUNNY
+NEW YORK CITY    --HWRS --88 
+City:NEW YORK CITY, condition:SHWRS,temp:88  70
+Update weather bean: City=NEW YORK CITYtemp=88  70condition=SHWRS
+NEWARK           --HWRS --91 
+City:NEWARK, condition:SHWRS,temp:91  73
+Update weather bean: City=NEWARKtemp=91  73condition=SHWRS
+NORFOLK VA       --HWRS --91 
+City:NORFOLK VA, condition:SHWRS,temp:91  74
+Update weather bean: City=NORFOLK VAtemp=91  74condition=SHWRS
+NORTH PLATTE     --STRMS--80 
+City:NORTH PLATTE, condition:TSTRMS,temp:80  60
+Update weather bean: City=NORTH PLATTEtemp=80  60condition=TSTRMS
+OKLAHOMA CITY    --STRMS--83 
+City:OKLAHOMA CITY, condition:TSTRMS,temp:83  64
+Update weather bean: City=OKLAHOMA CITYtemp=83  64condition=TSTRMS
+OMAHA            --TCLDY--78 
+City:OMAHA, condition:PTCLDY,temp:78  53
+Update weather bean: City=OMAHAtemp=78  53condition=PTCLDY
+ORLANDO          --STRMS--93 
+City:ORLANDO, condition:TSTRMS,temp:93  81
+Update weather bean: City=ORLANDOtemp=93  81condition=TSTRMS
+PADUCAH          --OCLDY--87 
+City:PADUCAH, condition:MOCLDY,temp:87  65
+Update weather bean: City=PADUCAHtemp=87  65condition=MOCLDY
+PENDLETON        --UNNY --87 
+City:PENDLETON, condition:SUNNY,temp:87  56
+Update weather bean: City=PENDLETONtemp=87  56condition=SUNNY
+PEORIA           --TCLDY--72 
+City:PEORIA, condition:PTCLDY,temp:72  58
+Update weather bean: City=PEORIAtemp=72  58condition=PTCLDY
+PHILADELPHIA     --STRMS--90 
+City:PHILADELPHIA, condition:TSTRMS,temp:90  72
+Update weather bean: City=PHILADELPHIAtemp=90  72condition=TSTRMS
+PHOENIX         1--RYHOT--14 
+City:PHOENIX, condition:VRYHOT,temp:114  87
+Update weather bean: City=PHOENIXtemp=114  87condition=VRYHOT
+PITTSBURGH       --HWRS --82 
+City:PITTSBURGH, condition:SHWRS,temp:82  65
+Update weather bean: City=PITTSBURGHtemp=82  65condition=SHWRS
+POCATELLO        --UNNY --93 
+City:POCATELLO, condition:SUNNY,temp:93  59
+Update weather bean: City=POCATELLOtemp=93  59condition=SUNNY
+PORTLAND ME      --HWRS --91 
+City:PORTLAND ME, condition:SHWRS,temp:91  67
+Update weather bean: City=PORTLAND MEtemp=91  67condition=SHWRS
+PORTLAND OR      --TCLDY--84 
+City:PORTLAND OR, condition:PTCLDY,temp:84  63
+Update weather bean: City=PORTLAND ORtemp=84  63condition=PTCLDY
+PROVIDENCE       --HWRS --94 
+City:PROVIDENCE, condition:SHWRS,temp:94  74
+Update weather bean: City=PROVIDENCEtemp=94  74condition=SHWRS
+PUEBLO           --STRMS--81 
+City:PUEBLO, condition:TSTRMS,temp:81  63
+Update weather bean: City=PUEBLOtemp=81  63condition=TSTRMS
+RALEIGH DURHAM   --STRMS--84 
+City:RALEIGH DURHAM, condition:TSTRMS,temp:84  69
+Update weather bean: City=RALEIGH DURHAMtemp=84  69condition=TSTRMS
+RAPID CITY       --STRMS--86 
+City:RAPID CITY, condition:TSTRMS,temp:86  56
+Update weather bean: City=RAPID CITYtemp=86  56condition=TSTRMS
+RENO             --UNNY --94 
+City:RENO, condition:SUNNY,temp:94  63
+Update weather bean: City=RENOtemp=94  63condition=SUNNY
+RICHMOND         --HWRS --90 
+City:RICHMOND, condition:SHWRS,temp:90  68
+Update weather bean: City=RICHMONDtemp=90  68condition=SHWRS
+ROANOKE          --STRMS--78 
+City:ROANOKE, condition:TSTRMS,temp:78  68
+Update weather bean: City=ROANOKEtemp=78  68condition=TSTRMS
+ROCHESTER NY     --HWRS --82 
+City:ROCHESTER NY, condition:SHWRS,temp:82  67
+Update weather bean: City=ROCHESTER NYtemp=82  67condition=SHWRS
+ROCKFORD         --TCLDY--69 
+City:ROCKFORD, condition:PTCLDY,temp:69  55
+Update weather bean: City=ROCKFORDtemp=69  55condition=PTCLDY
+SACRAMENTO       --UNNY --97 
+City:SACRAMENTO, condition:SUNNY,temp:97  61
+Update weather bean: City=SACRAMENTOtemp=97  61condition=SUNNY
+ST LOUIS         --OCLDY--79 
+City:ST LOUIS, condition:MOCLDY,temp:79  59
+Update weather bean: City=ST LOUIStemp=79  59condition=MOCLDY
+ST PETERSBURG    --STRMS--91 
+City:ST PETERSBURG, condition:TSTRMS,temp:91  84
+Update weather bean: City=ST PETERSBURGtemp=91  84condition=TSTRMS
+ST THOMAS VI     --TCLDY--90 
+City:ST THOMAS VI, condition:PTCLDY,temp:90  83
+Update weather bean: City=ST THOMAS VItemp=90  83condition=PTCLDY
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 1(st/rd/th) time update!!
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=04&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS04
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 4 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3SALEM OR         84  58         SUNNY   87/58   SUNNY   84/59
+Update weather information...4
+SALEM OR         --UNNY --84 
+City:SALEM OR, condition:SUNNY,temp:84  58
+Update weather bean: City=SALEM ORtemp=84  58condition=SUNNY
+SALT LAKE CITY  1--UNNY --00 
+City:SALT LAKE CITY, condition:SUNNY,temp:100  71
+Update weather bean: City=SALT LAKE CITYtemp=100  71condition=SUNNY
+SAN ANGELO       --UNNY --88 
+City:SAN ANGELO, condition:SUNNY,temp:88  66
+Update weather bean: City=SAN ANGELOtemp=88  66condition=SUNNY
+SAN ANTONIO     1--TCLDY--00 
+City:SAN ANTONIO, condition:PTCLDY,temp:100  74
+Update weather bean: City=SAN ANTONIOtemp=100  74condition=PTCLDY
+SAN DIEGO        --OCLDY--72 
+City:SAN DIEGO, condition:MOCLDY,temp:72  63
+Update weather bean: City=SAN DIEGOtemp=72  63condition=MOCLDY
+SAN FRANCISCO    --OCLDY--75 
+City:SAN FRANCISCO, condition:MOCLDY,temp:75  58
+Update weather bean: City=SAN FRANCISCOtemp=75  58condition=MOCLDY
+SAN JOSE         --UNNY --88 
+City:SAN JOSE, condition:SUNNY,temp:88  60
+Update weather bean: City=SAN JOSEtemp=88  60condition=SUNNY
+SAN JUAN PR      --HWRS --94 
+City:SAN JUAN PR, condition:SHWRS,temp:94  82
+Update weather bean: City=SAN JUAN PRtemp=94  82condition=SHWRS
+SANTA FE         --UNNY --89 
+City:SANTA FE, condition:SUNNY,temp:89  59
+Update weather bean: City=SANTA FEtemp=89  59condition=SUNNY
+ST STE MARIE     --OCLDY--68 
+City:ST STE MARIE, condition:MOCLDY,temp:68  54
+Update weather bean: City=ST STE MARIEtemp=68  54condition=MOCLDY
+SAVANNAH         --STRMS--91 
+City:SAVANNAH, condition:TSTRMS,temp:91  73
+Update weather bean: City=SAVANNAHtemp=91  73condition=TSTRMS
+SEATTLE          --TCLDY--82 
+City:SEATTLE, condition:PTCLDY,temp:82  62
+Update weather bean: City=SEATTLEtemp=82  62condition=PTCLDY
+SHREVEPORT       --TCLDY--92 
+City:SHREVEPORT, condition:PTCLDY,temp:92  69
+Update weather bean: City=SHREVEPORTtemp=92  69condition=PTCLDY
+SIOUX CITY       --TCLDY--77 
+City:SIOUX CITY, condition:PTCLDY,temp:77  47
+Update weather bean: City=SIOUX CITYtemp=77  47condition=PTCLDY
+SIOUX FALLS      --OCLDY--78 
+City:SIOUX FALLS, condition:MOCLDY,temp:78  50
+Update weather bean: City=SIOUX FALLStemp=78  50condition=MOCLDY
+SOUTH BEND       --TCLDY--78 
+City:SOUTH BEND, condition:PTCLDY,temp:78  61
+Update weather bean: City=SOUTH BENDtemp=78  61condition=PTCLDY
+SPOKANE          --UNNY --86 
+City:SPOKANE, condition:SUNNY,temp:86  60
+Update weather bean: City=SPOKANEtemp=86  60condition=SUNNY
+SPRINGFIELD IL   --TCLDY--74 
+City:SPRINGFIELD IL, condition:PTCLDY,temp:74  57
+Update weather bean: City=SPRINGFIELD ILtemp=74  57condition=PTCLDY
+SPRINGFIELD MO   --TCLDY--81 
+City:SPRINGFIELD MO, condition:PTCLDY,temp:81  56
+Update weather bean: City=SPRINGFIELD MOtemp=81  56condition=PTCLDY
+SYRACUSE         --HWRS --83 
+City:SYRACUSE, condition:SHWRS,temp:83  70
+Update weather bean: City=SYRACUSEtemp=83  70condition=SHWRS
+TALLAHASSEE      --STRMS--98 
+City:TALLAHASSEE, condition:TSTRMS,temp:98  74
+Update weather bean: City=TALLAHASSEEtemp=98  74condition=TSTRMS
+TAMPA            --STRMS--92 
+City:TAMPA, condition:TSTRMS,temp:92  82
+Update weather bean: City=TAMPAtemp=92  82condition=TSTRMS
+TOLEDO           --OCLDY--84 
+City:TOLEDO, condition:MOCLDY,temp:84  66
+Update weather bean: City=TOLEDOtemp=84  66condition=MOCLDY
+TOPEKA           --UNNY --79 
+City:TOPEKA, condition:SUNNY,temp:79  53
+Update weather bean: City=TOPEKAtemp=79  53condition=SUNNY
+TUCSON          1--RYHOT--07 
+City:TUCSON, condition:VRYHOT,temp:107  78
+Update weather bean: City=TUCSONtemp=107  78condition=VRYHOT
+TULSA            --TCLDY--84 
+City:TULSA, condition:PTCLDY,temp:84  58
+Update weather bean: City=TULSAtemp=84  58condition=PTCLDY
+TUPELO           --STRMS--93 
+City:TUPELO, condition:TSTRMS,temp:93  71
+Update weather bean: City=TUPELOtemp=93  71condition=TSTRMS
+WACO             --UNNY --95 
+City:WACO, condition:SUNNY,temp:95  71
+Update weather bean: City=WACOtemp=95  71condition=SUNNY
+WASHINGTON DC    --HWRS --87 
+City:WASHINGTON DC, condition:SHWRS,temp:87  70
+Update weather bean: City=WASHINGTON DCtemp=87  70condition=SHWRS
+W PALM BEACH     --STRMS--89 
+City:W PALM BEACH, condition:TSTRMS,temp:89  78
+Update weather bean: City=W PALM BEACHtemp=89  78condition=TSTRMS
+WICHITA          --TCLDY--84 
+City:WICHITA, condition:PTCLDY,temp:84  61
+Update weather bean: City=WICHITAtemp=84  61condition=PTCLDY
+WICHITA FALLS    --TCLDY--89 
+City:WICHITA FALLS, condition:PTCLDY,temp:89  67
+Update weather bean: City=WICHITA FALLStemp=89  67condition=PTCLDY
+WILKES BARRE     --HWRS --87 
+City:WILKES BARRE, condition:SHWRS,temp:87  70
+Update weather bean: City=WILKES BARREtemp=87  70condition=SHWRS
+WILMINGTON DE    --STRMS--88 
+City:WILMINGTON DE, condition:TSTRMS,temp:88  70
+Update weather bean: City=WILMINGTON DEtemp=88  70condition=TSTRMS
+YAKIMA           --UNNY --90 
+City:YAKIMA, condition:SUNNY,temp:90  65
+Update weather bean: City=YAKIMAtemp=90  65condition=SUNNY
+YOUNGSTOWN       --HWRS --82 
+City:YOUNGSTOWN, condition:SHWRS,temp:82  64
+Update weather bean: City=YOUNGSTOWNtemp=82  64condition=SHWRS
+YUMA            1--RYHOT--13 
+City:YUMA, condition:VRYHOT,temp:113  86
+Update weather bean: City=YUMAtemp=113  86condition=VRYHOT
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 1(st/rd/th) time update!!
+Initializing WeatherService...
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=01&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=01&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS01
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 1 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3ABILENE TX       85  68   .08   SUNNY   97/74   PTCLDY 100/76
+Update weather information...4
+ABILENE TX       --UNNY --85 
+City:ABILENE TX, condition:SUNNY,temp:85  68
+Update weather bean: City=ABILENE TXtemp=85  68condition=SUNNY
+AKRON CANTON     --HWRS --82 
+City:AKRON CANTON, condition:SHWRS,temp:82  66
+Update weather bean: City=AKRON CANTONtemp=82  66condition=SHWRS
+ALBANY NY        --AIN  --82 
+City:ALBANY NY, condition:RAIN,temp:82  67
+Update weather bean: City=ALBANY NYtemp=82  67condition=RAIN
+ALBUQUERQUE      --UNNY --92 
+City:ALBUQUERQUE, condition:SUNNY,temp:92  69
+Update weather bean: City=ALBUQUERQUEtemp=92  69condition=SUNNY
+ALLENTOWN        --HWRS --86 
+City:ALLENTOWN, condition:SHWRS,temp:86  71
+Update weather bean: City=ALLENTOWNtemp=86  71condition=SHWRS
+AMARILLO         --UNNY --89 
+City:AMARILLO, condition:SUNNY,temp:89  63
+Update weather bean: City=AMARILLOtemp=89  63condition=SUNNY
+ANCHORAGE        --TCLDY--67 
+City:ANCHORAGE, condition:PTCLDY,temp:67  52
+Update weather bean: City=ANCHORAGEtemp=67  52condition=PTCLDY
+ASHEVILLE        --STRMS--75 
+City:ASHEVILLE, condition:TSTRMS,temp:75  63
+Update weather bean: City=ASHEVILLEtemp=75  63condition=TSTRMS
+ATLANTA          --STRMS--89 
+City:ATLANTA, condition:TSTRMS,temp:89  68
+Update weather bean: City=ATLANTAtemp=89  68condition=TSTRMS
+ATLANTIC CITY    --STRMS--92 
+City:ATLANTIC CITY, condition:TSTRMS,temp:92  77
+Update weather bean: City=ATLANTIC CITYtemp=92  77condition=TSTRMS
+AUSTIN          1--TCLDY--01 
+City:AUSTIN, condition:PTCLDY,temp:101  73
+Update weather bean: City=AUSTINtemp=101  73condition=PTCLDY
+BALTIMORE        --HWRS --89 
+City:BALTIMORE, condition:SHWRS,temp:89  70
+Update weather bean: City=BALTIMOREtemp=89  70condition=SHWRS
+BATON ROUGE      --UNNY --93 
+City:BATON ROUGE, condition:SUNNY,temp:93  74
+Update weather bean: City=BATON ROUGEtemp=93  74condition=SUNNY
+BILLINGS         --UNNY --93 
+City:BILLINGS, condition:SUNNY,temp:93  60
+Update weather bean: City=BILLINGStemp=93  60condition=SUNNY
+BIRMINGHAM       --STRMS--90 
+City:BIRMINGHAM, condition:TSTRMS,temp:90  70
+Update weather bean: City=BIRMINGHAMtemp=90  70condition=TSTRMS
+BISMARCK         --STRMS--83 
+City:BISMARCK, condition:TSTRMS,temp:83  55
+Update weather bean: City=BISMARCKtemp=83  55condition=TSTRMS
+BOISE            --UNNY --93 
+City:BOISE, condition:SUNNY,temp:93  61
+Update weather bean: City=BOISEtemp=93  61condition=SUNNY
+BOSTON           --HWRS --92 
+City:BOSTON, condition:SHWRS,temp:92  70
+Update weather bean: City=BOSTONtemp=92  70condition=SHWRS
+BRIDGEPORT       --HWRS --89 
+City:BRIDGEPORT, condition:SHWRS,temp:89  72
+Update weather bean: City=BRIDGEPORTtemp=89  72condition=SHWRS
+BROWNSVILLE      --TCLDY--93 
+City:BROWNSVILLE, condition:PTCLDY,temp:93  76
+Update weather bean: City=BROWNSVILLEtemp=93  76condition=PTCLDY
+BUFFALO          --HWRS --83 
+City:BUFFALO, condition:SHWRS,temp:83  68
+Update weather bean: City=BUFFALOtemp=83  68condition=SHWRS
+BURLINGTON VT    --HWRS --81 
+City:BURLINGTON VT, condition:SHWRS,temp:81  65
+Update weather bean: City=BURLINGTON VTtemp=81  65condition=SHWRS
+CARIBOU          --HWRS --84 
+City:CARIBOU, condition:SHWRS,temp:84  59
+Update weather bean: City=CARIBOUtemp=84  59condition=SHWRS
+CASPER           --UNNY --93 
+City:CASPER, condition:SUNNY,temp:93  51
+Update weather bean: City=CASPERtemp=93  51condition=SUNNY
+CHARLESTON SC    --STRMS--83 
+City:CHARLESTON SC, condition:TSTRMS,temp:83  70
+Update weather bean: City=CHARLESTON SCtemp=83  70condition=TSTRMS
+CHARLESTON WV    --STRMS--82 
+City:CHARLESTON WV, condition:TSTRMS,temp:82  67
+Update weather bean: City=CHARLESTON WVtemp=82  67condition=TSTRMS
+CHARLOTTE        --UNNY --88 
+City:CHARLOTTE, condition:SUNNY,temp:88  69
+Update weather bean: City=CHARLOTTEtemp=88  69condition=SUNNY
+CHATTANOOGA      --STRMS--91 
+City:CHATTANOOGA, condition:TSTRMS,temp:91  72
+Update weather bean: City=CHATTANOOGAtemp=91  72condition=TSTRMS
+CHEYENNE         --HWRS --86 
+City:CHEYENNE, condition:SHWRS,temp:86  57
+Update weather bean: City=CHEYENNEtemp=86  57condition=SHWRS
+CHICAGO          --TCLDY--72 
+City:CHICAGO, condition:PTCLDY,temp:72  59
+Update weather bean: City=CHICAGOtemp=72  59condition=PTCLDY
+CINCINNATI       --HWRS --82 
+City:CINCINNATI, condition:SHWRS,temp:82  63
+Update weather bean: City=CINCINNATItemp=82  63condition=SHWRS
+CLEVELAND        --HWRS --80 
+City:CLEVELAND, condition:SHWRS,temp:80  65
+Update weather bean: City=CLEVELANDtemp=80  65condition=SHWRS
+COLORADO SPGS    --STRMS--77 
+City:COLORADO SPGS, condition:TSTRMS,temp:77  59
+Update weather bean: City=COLORADO SPGStemp=77  59condition=TSTRMS
+COLUMBIA SC      --STRMS--88 
+City:COLUMBIA SC, condition:TSTRMS,temp:88  69
+Update weather bean: City=COLUMBIA SCtemp=88  69condition=TSTRMS
+COLUMBUS GA      --TCLDY--95 
+City:COLUMBUS GA, condition:PTCLDY,temp:95  71
+Update weather bean: City=COLUMBUS GAtemp=95  71condition=PTCLDY
+COLUMBUS OH      --HWRS --82 
+City:COLUMBUS OH, condition:SHWRS,temp:82  64
+Update weather bean: City=COLUMBUS OHtemp=82  64condition=SHWRS
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 2(st/rd/th) time update!!
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=02&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=02&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS02
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 2 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3CONCORD NH       89  66         RAIN    79/66   SUNNY   86/58
+Update weather information...4
+CONCORD NH       --AIN  --89 
+City:CONCORD NH, condition:RAIN,temp:89  66
+Update weather bean: City=CONCORD NHtemp=89  66condition=RAIN
+CORPUS CHRISTI   --TCLDY--97 
+City:CORPUS CHRISTI, condition:PTCLDY,temp:97  74
+Update weather bean: City=CORPUS CHRISTItemp=97  74condition=PTCLDY
+DALLAS FT WORTH  --UNNY --93 
+City:DALLAS FT WORTH, condition:SUNNY,temp:93  71
+Update weather bean: City=DALLAS FT WORTHtemp=93  71condition=SUNNY
+DAYTON           --HWRS --82 
+City:DAYTON, condition:SHWRS,temp:82  64
+Update weather bean: City=DAYTONtemp=82  64condition=SHWRS
+DAYTONA BEACH    --STRMS--93 
+City:DAYTONA BEACH, condition:TSTRMS,temp:93  77
+Update weather bean: City=DAYTONA BEACHtemp=93  77condition=TSTRMS
+DENVER           --STRMS--90 
+City:DENVER, condition:TSTRMS,temp:90  61
+Update weather bean: City=DENVERtemp=90  61condition=TSTRMS
+DES MOINES       --TCLDY--76 
+City:DES MOINES, condition:PTCLDY,temp:76  55
+Update weather bean: City=DES MOINEStemp=76  55condition=PTCLDY
+DETROIT          --HWRS --84 
+City:DETROIT, condition:SHWRS,temp:84  65
+Update weather bean: City=DETROITtemp=84  65condition=SHWRS
+DULUTH           --UNNY --71 
+City:DULUTH, condition:SUNNY,temp:71  53
+Update weather bean: City=DULUTHtemp=71  53condition=SUNNY
+EL PASO          --TCLDY--99 
+City:EL PASO, condition:PTCLDY,temp:99  78
+Update weather bean: City=EL PASOtemp=99  78condition=PTCLDY
+ELKINS           --STRMS--77 
+City:ELKINS, condition:TSTRMS,temp:77  63
+Update weather bean: City=ELKINStemp=77  63condition=TSTRMS
+ERIE             --HWRS --85 
+City:ERIE, condition:SHWRS,temp:85  68
+Update weather bean: City=ERIEtemp=85  68condition=SHWRS
+EUGENE           --TCLDY--87 
+City:EUGENE, condition:PTCLDY,temp:87  57
+Update weather bean: City=EUGENEtemp=87  57condition=PTCLDY
+EVANSVILLE       --OCLDY--83 
+City:EVANSVILLE, condition:MOCLDY,temp:83  64
+Update weather bean: City=EVANSVILLEtemp=83  64condition=MOCLDY
+FAIRBANKS        --HWRS --64 
+City:FAIRBANKS, condition:SHWRS,temp:64  55
+Update weather bean: City=FAIRBANKStemp=64  55condition=SHWRS
+FARGO            --UNNY --75 
+City:FARGO, condition:SUNNY,temp:75  55
+Update weather bean: City=FARGOtemp=75  55condition=SUNNY
+FLAGSTAFF        --UNNY --86 
+City:FLAGSTAFF, condition:SUNNY,temp:86  47
+Update weather bean: City=FLAGSTAFFtemp=86  47condition=SUNNY
+FLINT            --HWRS --78 
+City:FLINT, condition:SHWRS,temp:78  59
+Update weather bean: City=FLINTtemp=78  59condition=SHWRS
+FORT SMITH       --UNNY --89 
+City:FORT SMITH, condition:SUNNY,temp:89  62
+Update weather bean: City=FORT SMITHtemp=89  62condition=SUNNY
+FORT WAYNE       --TCLDY--82 
+City:FORT WAYNE, condition:PTCLDY,temp:82  63
+Update weather bean: City=FORT WAYNEtemp=82  63condition=PTCLDY
+FRESNO          1--UNNY --00 
+City:FRESNO, condition:SUNNY,temp:100  71
+Update weather bean: City=FRESNOtemp=100  71condition=SUNNY
+GOODLAND         --STRMS--78 
+City:GOODLAND, condition:TSTRMS,temp:78  59
+Update weather bean: City=GOODLANDtemp=78  59condition=TSTRMS
+GRAND JUNCTION  1--UNNY --02 
+City:GRAND JUNCTION, condition:SUNNY,temp:102  72
+Update weather bean: City=GRAND JUNCTIONtemp=102  72condition=SUNNY
+GRAND RAPIDS     --HWRS --78 
+City:GRAND RAPIDS, condition:SHWRS,temp:78  57
+Update weather bean: City=GRAND RAPIDStemp=78  57condition=SHWRS
+GREAT FALLS      --UNNY --89 
+City:GREAT FALLS, condition:SUNNY,temp:89  53
+Update weather bean: City=GREAT FALLStemp=89  53condition=SUNNY
+GREEN BAY        --TCLDY--70 
+City:GREEN BAY, condition:PTCLDY,temp:70  48
+Update weather bean: City=GREEN BAYtemp=70  48condition=PTCLDY
+GREENSBORO       --STRMS--84 
+City:GREENSBORO, condition:TSTRMS,temp:84  68
+Update weather bean: City=GREENSBOROtemp=84  68condition=TSTRMS
+HARRISBURG       --AIN  --87 
+City:HARRISBURG, condition:RAIN,temp:87  71
+Update weather bean: City=HARRISBURGtemp=87  71condition=RAIN
+HARTFORD SPGFLD  --HWRS --92 
+City:HARTFORD SPGFLD, condition:SHWRS,temp:92  70
+Update weather bean: City=HARTFORD SPGFLDtemp=92  70condition=SHWRS
+HELENA           --UNNY --93 
+City:HELENA, condition:SUNNY,temp:93  59
+Update weather bean: City=HELENAtemp=93  59condition=SUNNY
+HONOLULU         --UNNY --90 
+City:HONOLULU, condition:SUNNY,temp:90  78
+Update weather bean: City=HONOLULUtemp=90  78condition=SUNNY
+HOUSTON INTCNTL  --STRMS--98 
+City:HOUSTON INTCNTL, condition:TSTRMS,temp:98  81
+Update weather bean: City=HOUSTON INTCNTLtemp=98  81condition=TSTRMS
+HUNTSVILLE AL    --STRMS--91 
+City:HUNTSVILLE AL, condition:TSTRMS,temp:91  70
+Update weather bean: City=HUNTSVILLE ALtemp=91  70condition=TSTRMS
+INDIANAPOLIS     --OCLDY--79 
+City:INDIANAPOLIS, condition:MOCLDY,temp:79  63
+Update weather bean: City=INDIANAPOLIStemp=79  63condition=MOCLDY
+JACKSON MS       --TCLDY--93 
+City:JACKSON MS, condition:PTCLDY,temp:93  70
+Update weather bean: City=JACKSON MStemp=93  70condition=PTCLDY
+JACKSONVILLE     --STRMS--91 
+City:JACKSONVILLE, condition:TSTRMS,temp:91  76
+Update weather bean: City=JACKSONVILLEtemp=91  76condition=TSTRMS
+JUNEAU           --AIN  --61 
+City:JUNEAU, condition:RAIN,temp:61  53
+Update weather bean: City=JUNEAUtemp=61  53condition=RAIN
+KANSAS CITY      --TCLDY--76 
+City:KANSAS CITY, condition:PTCLDY,temp:76  53
+Update weather bean: City=KANSAS CITYtemp=76  53condition=PTCLDY
+KEY WEST         --STRMS--90 
+City:KEY WEST, condition:TSTRMS,temp:90  85
+Update weather bean: City=KEY WESTtemp=90  85condition=TSTRMS
+KNOXVILLE        --STRMS--82 
+City:KNOXVILLE, condition:TSTRMS,temp:82  68
+Update weather bean: City=KNOXVILLEtemp=82  68condition=TSTRMS
+LAKE CHARLES     --STRMS--95 
+City:LAKE CHARLES, condition:TSTRMS,temp:95  76
+Update weather bean: City=LAKE CHARLEStemp=95  76condition=TSTRMS
+LANSING          --HWRS --79 
+City:LANSING, condition:SHWRS,temp:79  56
+Update weather bean: City=LANSINGtemp=79  56condition=SHWRS
+LAS VEGAS       1--UNNY --08 
+City:LAS VEGAS, condition:SUNNY,temp:108  84
+Update weather bean: City=LAS VEGAStemp=108  84condition=SUNNY
+LEXINGTON        --STRMS--84 
+City:LEXINGTON, condition:TSTRMS,temp:84  61
+Update weather bean: City=LEXINGTONtemp=84  61condition=TSTRMS
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 2(st/rd/th) time update!!
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=03&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=03&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS03
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 3 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3LINCOLN          76  49         PTCLDY  79/58   PTCLDY  80/61
+Update weather information...4
+LINCOLN          --TCLDY--76 
+City:LINCOLN, condition:PTCLDY,temp:76  49
+Update weather bean: City=LINCOLNtemp=76  49condition=PTCLDY
+LITTLE ROCK      --TCLDY--89 
+City:LITTLE ROCK, condition:PTCLDY,temp:89  68
+Update weather bean: City=LITTLE ROCKtemp=89  68condition=PTCLDY
+LOS ANGELES      --TCLDY--84 
+City:LOS ANGELES, condition:PTCLDY,temp:84  67
+Update weather bean: City=LOS ANGELEStemp=84  67condition=PTCLDY
+LOUISVILLE       --STRMS--84 
+City:LOUISVILLE, condition:TSTRMS,temp:84  66
+Update weather bean: City=LOUISVILLEtemp=84  66condition=TSTRMS
+LUBBOCK          --TCLDY--88 
+City:LUBBOCK, condition:PTCLDY,temp:88  68
+Update weather bean: City=LUBBOCKtemp=88  68condition=PTCLDY
+MACON            --UNNY --99 
+City:MACON, condition:SUNNY,temp:99  68
+Update weather bean: City=MACONtemp=99  68condition=SUNNY
+MADISON          --TCLDY--66 
+City:MADISON, condition:PTCLDY,temp:66  52
+Update weather bean: City=MADISONtemp=66  52condition=PTCLDY
+MEDFORD          --TCLDY--94 
+City:MEDFORD, condition:PTCLDY,temp:94  66
+Update weather bean: City=MEDFORDtemp=94  66condition=PTCLDY
+MEMPHIS          --OCLDY--91 
+City:MEMPHIS, condition:MOCLDY,temp:91  71
+Update weather bean: City=MEMPHIStemp=91  71condition=MOCLDY
+MIAMI BEACH      --STRMS--89 
+City:MIAMI BEACH, condition:TSTRMS,temp:89  78
+Update weather bean: City=MIAMI BEACHtemp=89  78condition=TSTRMS
+MIDLAND ODESSA   --UNNY --92 
+City:MIDLAND ODESSA, condition:SUNNY,temp:92  69
+Update weather bean: City=MIDLAND ODESSAtemp=92  69condition=SUNNY
+MILWAUKEE        --TCLDY--67 
+City:MILWAUKEE, condition:PTCLDY,temp:67  58
+Update weather bean: City=MILWAUKEEtemp=67  58condition=PTCLDY
+MPLS ST PAUL     --UNNY --74 
+City:MPLS ST PAUL, condition:SUNNY,temp:74  54
+Update weather bean: City=MPLS ST PAULtemp=74  54condition=SUNNY
+MISSOULA         --UNNY --89 
+City:MISSOULA, condition:SUNNY,temp:89  50
+Update weather bean: City=MISSOULAtemp=89  50condition=SUNNY
+MOBILE           --UNNY --92 
+City:MOBILE, condition:SUNNY,temp:92  71
+Update weather bean: City=MOBILEtemp=92  71condition=SUNNY
+MONTGOMERY       --STRMS--94 
+City:MONTGOMERY, condition:TSTRMS,temp:94  70
+Update weather bean: City=MONTGOMERYtemp=94  70condition=TSTRMS
+NASHVILLE        --STRMS--89 
+City:NASHVILLE, condition:TSTRMS,temp:89  70
+Update weather bean: City=NASHVILLEtemp=89  70condition=TSTRMS
+NEW ORLEANS      --UNNY --96 
+City:NEW ORLEANS, condition:SUNNY,temp:96  76
+Update weather bean: City=NEW ORLEANStemp=96  76condition=SUNNY
+NEW YORK CITY    --HWRS --88 
+City:NEW YORK CITY, condition:SHWRS,temp:88  70
+Update weather bean: City=NEW YORK CITYtemp=88  70condition=SHWRS
+NEWARK           --HWRS --91 
+City:NEWARK, condition:SHWRS,temp:91  73
+Update weather bean: City=NEWARKtemp=91  73condition=SHWRS
+NORFOLK VA       --HWRS --91 
+City:NORFOLK VA, condition:SHWRS,temp:91  74
+Update weather bean: City=NORFOLK VAtemp=91  74condition=SHWRS
+NORTH PLATTE     --STRMS--80 
+City:NORTH PLATTE, condition:TSTRMS,temp:80  60
+Update weather bean: City=NORTH PLATTEtemp=80  60condition=TSTRMS
+OKLAHOMA CITY    --STRMS--83 
+City:OKLAHOMA CITY, condition:TSTRMS,temp:83  64
+Update weather bean: City=OKLAHOMA CITYtemp=83  64condition=TSTRMS
+OMAHA            --TCLDY--78 
+City:OMAHA, condition:PTCLDY,temp:78  53
+Update weather bean: City=OMAHAtemp=78  53condition=PTCLDY
+ORLANDO          --STRMS--93 
+City:ORLANDO, condition:TSTRMS,temp:93  81
+Update weather bean: City=ORLANDOtemp=93  81condition=TSTRMS
+PADUCAH          --OCLDY--87 
+City:PADUCAH, condition:MOCLDY,temp:87  65
+Update weather bean: City=PADUCAHtemp=87  65condition=MOCLDY
+PENDLETON        --UNNY --87 
+City:PENDLETON, condition:SUNNY,temp:87  56
+Update weather bean: City=PENDLETONtemp=87  56condition=SUNNY
+PEORIA           --TCLDY--72 
+City:PEORIA, condition:PTCLDY,temp:72  58
+Update weather bean: City=PEORIAtemp=72  58condition=PTCLDY
+PHILADELPHIA     --STRMS--90 
+City:PHILADELPHIA, condition:TSTRMS,temp:90  72
+Update weather bean: City=PHILADELPHIAtemp=90  72condition=TSTRMS
+PHOENIX         1--RYHOT--14 
+City:PHOENIX, condition:VRYHOT,temp:114  87
+Update weather bean: City=PHOENIXtemp=114  87condition=VRYHOT
+PITTSBURGH       --HWRS --82 
+City:PITTSBURGH, condition:SHWRS,temp:82  65
+Update weather bean: City=PITTSBURGHtemp=82  65condition=SHWRS
+POCATELLO        --UNNY --93 
+City:POCATELLO, condition:SUNNY,temp:93  59
+Update weather bean: City=POCATELLOtemp=93  59condition=SUNNY
+PORTLAND ME      --HWRS --91 
+City:PORTLAND ME, condition:SHWRS,temp:91  67
+Update weather bean: City=PORTLAND MEtemp=91  67condition=SHWRS
+PORTLAND OR      --TCLDY--84 
+City:PORTLAND OR, condition:PTCLDY,temp:84  63
+Update weather bean: City=PORTLAND ORtemp=84  63condition=PTCLDY
+PROVIDENCE       --HWRS --94 
+City:PROVIDENCE, condition:SHWRS,temp:94  74
+Update weather bean: City=PROVIDENCEtemp=94  74condition=SHWRS
+PUEBLO           --STRMS--81 
+City:PUEBLO, condition:TSTRMS,temp:81  63
+Update weather bean: City=PUEBLOtemp=81  63condition=TSTRMS
+RALEIGH DURHAM   --STRMS--84 
+City:RALEIGH DURHAM, condition:TSTRMS,temp:84  69
+Update weather bean: City=RALEIGH DURHAMtemp=84  69condition=TSTRMS
+RAPID CITY       --STRMS--86 
+City:RAPID CITY, condition:TSTRMS,temp:86  56
+Update weather bean: City=RAPID CITYtemp=86  56condition=TSTRMS
+RENO             --UNNY --94 
+City:RENO, condition:SUNNY,temp:94  63
+Update weather bean: City=RENOtemp=94  63condition=SUNNY
+RICHMOND         --HWRS --90 
+City:RICHMOND, condition:SHWRS,temp:90  68
+Update weather bean: City=RICHMONDtemp=90  68condition=SHWRS
+ROANOKE          --STRMS--78 
+City:ROANOKE, condition:TSTRMS,temp:78  68
+Update weather bean: City=ROANOKEtemp=78  68condition=TSTRMS
+ROCHESTER NY     --HWRS --82 
+City:ROCHESTER NY, condition:SHWRS,temp:82  67
+Update weather bean: City=ROCHESTER NYtemp=82  67condition=SHWRS
+ROCKFORD         --TCLDY--69 
+City:ROCKFORD, condition:PTCLDY,temp:69  55
+Update weather bean: City=ROCKFORDtemp=69  55condition=PTCLDY
+SACRAMENTO       --UNNY --97 
+City:SACRAMENTO, condition:SUNNY,temp:97  61
+Update weather bean: City=SACRAMENTOtemp=97  61condition=SUNNY
+ST LOUIS         --OCLDY--79 
+City:ST LOUIS, condition:MOCLDY,temp:79  59
+Update weather bean: City=ST LOUIStemp=79  59condition=MOCLDY
+ST PETERSBURG    --STRMS--91 
+City:ST PETERSBURG, condition:TSTRMS,temp:91  84
+Update weather bean: City=ST PETERSBURGtemp=91  84condition=TSTRMS
+ST THOMAS VI     --TCLDY--90 
+City:ST THOMAS VI, condition:PTCLDY,temp:90  83
+Update weather bean: City=ST THOMAS VItemp=90  83condition=PTCLDY
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 2(st/rd/th) time update!!
+Update weather information...
+Update weather information...1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" /><title>National Weather Service Text Product Display</title>
+<meta name="DC.title" content="National Weather Service Text Product Display" />
+<meta name="DC.description" content="National Weather Service is your source for the most complete weather forecast and weather related information on the web" />
+<meta name="DC.creator" content="US Department of Commerce, NOAA, National Weather Service" />
+<meta name="DC.date.created" scheme="ISO8601" content="2020-03-10" />
+<meta name="DC.date.reviewed" scheme="ISO8601" content="2013-12-11" />
+<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+<meta name="DC.keywords" content="weather, local weather forecast, local forecast, weather forecasts, local weather, radar, fire weather, center weather service units, hamweather" />
+<meta name="DC.publisher" content="NOAA's National Weather Service" />
+<meta name="DC.contributor" content="National Weather Service" />
+<meta name="DC.rights" content="http://www.weather.gov/disclaimer.php" />
+<meta name="rating" content="General" />
+<meta name="robots" content="index,follow" />
+<meta name="Distribution" content="Global" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link href="/css/default/main_1024.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/product/main.css" title="nwsstyle" rel="stylesheet" type="text/css" media="all"></head>
+<body>
+<div id="container"><a href="#skipnav" class="skip">Skip Navigation</a>
+<div id="header">
+<div id="brand"><a href="http://www.noaa.gov/" class="noaalink">NOAA</a><div class="aligncenter"><a href="http://www.weather.gov/" class="wxlink">weather.gov</a></div>
+<h1>National Weather Service Regional Headquarters</h1>
+<a href="https://www.weather.gov/crh" class="site">Central Region Headquarters</a>
+</div>
+<!--begin search code -->
+<div id="searchDiv">
+<ul>
+<li><a href="https://www.weather.gov/crh">Home</a></li>
+<li><a href="https://www.weather.gov/crh/sitemap.php">Site Map</a></li>
+<li><a href="http://www.weather.gov/pa/">News</a></li>
+<li><a href="http://weather.gov/organization.php">Organization</a></li>
+<li><form method="get" action="http://firstgovsearch.gov/search" id="search"><div>
+    <input type="hidden" name="v:project" value="firstgov" />
+    <label for="query">Search for: <input type="text" name="query" id="query" class="input" size="10"/></label>
+    <input type="radio" name="affiliate" checked="checked" value="nws.noaa.gov" id="nws" />
+    <label for="nws">NWS</label><input type="radio" name="affiliate" value="noaa.gov" id="noaa" />
+    <label for="noaa">All NOAA</label>&nbsp;<input type="submit" class="input" value="Go" /></div></form></li>
+</ul>
+</div>
+<!--end search code -->
+</div>
+
+	<div id="menu">
+
+		<form id="fcst" action="/zipcity.php" method="post"><div>
+		  <label for="Go2">Local forecast by<br /> "City, St" or Zip Code</label>
+		  <input name="inputstring" type="text" value="City, St" size="8" onfocus="this.value='';" />
+		  <input name="Go2" id="Go2" type="submit" value="Go" />
+		  <input type="hidden" name="siteid" value="crh" /></div>
+		</form>
+		<ul>
+		<li><ul><li>
+			<a href="http://www.weather.gov/rss/"><img src="/images/xml.gif" alt="RSS Feeds" title="RSS Feeds" width="36" height="14" class="img" /> RSS Feeds</a>
+		</li></ul></li><li>Current Hazards
+<ul>
+<li><a href="http://www.nhc.noaa.gov/" title="National Hurricane Center">Hurricane Center</a></li>
+</ul>
+</li>
+<li>Current Conditions
+<ul>
+<li><a href="http://www.nohrsc.noaa.gov/" title="NOAA's Source for Snow Information">Snow Cover</a></li>
+</ul>
+</li>
+</ul><br /></div><a name="skipnav"></a>
+<div id="local">
+<!-- // CONTENT STARTS HERE -->
+
+<span style="font-size: 20px; font-weight:bold;">Selected Cities Summary </span><br />Issued by NWS <br /><br /><div><a href="https://www.weather.gov/crh/">Home</a>&nbsp;|&nbsp;<b>Current Version</b>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=2&glossary=0">Previous Version</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=04&product=SCS&format=txt&version=1&glossary=0">Text Only</a>&nbsp;|&nbsp;<a href="javascript:window.print()">Print</a>&nbsp;|&nbsp;<a href="product_types.php?site=CRH">Product List</a>&nbsp;|&nbsp;<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=1&glossary=1">Glossary On</a></div><div>Versions: <b>1</b> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=2&glossary=0">2</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=3&glossary=0">3</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=4&glossary=0">4</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=5&glossary=0">5</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=6&glossary=0">6</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=7&glossary=0">7</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=8&glossary=0">8</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=9&glossary=0">9</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=10&glossary=0">10</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=11&glossary=0">11</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=12&glossary=0">12</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=13&glossary=0">13</a> 
+<a href="?site=CRH&issuedby=04&product=SCS&format=CI&version=14&glossary=0">14</a> <hr size="1" width="520"noshade="noshade" align="left" /></div><pre class="glossaryProduct">
+000
+FPUS20 KWBN 041250
+SCS04
+SELECTED CITIES WEATHER SUMMARY AND FORECASTS...PART 4 OF 4
+NWS/NDFD TELECOMMUNICATION OPERATIONS CENTER SILVER SPRING MD
+850 AM EDT TUE AUG 04 2020
+
+B INDICATES TEMPERATURES BELOW ZERO
+PRECIPITATION FOR 24 HOURS ENDING AT 8 AM EDT
+
+                                FORECAST        FORECAST
+                 MON...AUG 03   TUE....AUG 04   WED....AUG 05
+Update weather information...2
+Update weather information...3SALEM OR         84  58         SUNNY   87/58   SUNNY   84/59
+Update weather information...4
+SALEM OR         --UNNY --84 
+City:SALEM OR, condition:SUNNY,temp:84  58
+Update weather bean: City=SALEM ORtemp=84  58condition=SUNNY
+SALT LAKE CITY  1--UNNY --00 
+City:SALT LAKE CITY, condition:SUNNY,temp:100  71
+Update weather bean: City=SALT LAKE CITYtemp=100  71condition=SUNNY
+SAN ANGELO       --UNNY --88 
+City:SAN ANGELO, condition:SUNNY,temp:88  66
+Update weather bean: City=SAN ANGELOtemp=88  66condition=SUNNY
+SAN ANTONIO     1--TCLDY--00 
+City:SAN ANTONIO, condition:PTCLDY,temp:100  74
+Update weather bean: City=SAN ANTONIOtemp=100  74condition=PTCLDY
+SAN DIEGO        --OCLDY--72 
+City:SAN DIEGO, condition:MOCLDY,temp:72  63
+Update weather bean: City=SAN DIEGOtemp=72  63condition=MOCLDY
+SAN FRANCISCO    --OCLDY--75 
+City:SAN FRANCISCO, condition:MOCLDY,temp:75  58
+Update weather bean: City=SAN FRANCISCOtemp=75  58condition=MOCLDY
+SAN JOSE         --UNNY --88 
+City:SAN JOSE, condition:SUNNY,temp:88  60
+Update weather bean: City=SAN JOSEtemp=88  60condition=SUNNY
+SAN JUAN PR      --HWRS --94 
+City:SAN JUAN PR, condition:SHWRS,temp:94  82
+Update weather bean: City=SAN JUAN PRtemp=94  82condition=SHWRS
+SANTA FE         --UNNY --89 
+City:SANTA FE, condition:SUNNY,temp:89  59
+Update weather bean: City=SANTA FEtemp=89  59condition=SUNNY
+ST STE MARIE     --OCLDY--68 
+City:ST STE MARIE, condition:MOCLDY,temp:68  54
+Update weather bean: City=ST STE MARIEtemp=68  54condition=MOCLDY
+SAVANNAH         --STRMS--91 
+City:SAVANNAH, condition:TSTRMS,temp:91  73
+Update weather bean: City=SAVANNAHtemp=91  73condition=TSTRMS
+SEATTLE          --TCLDY--82 
+City:SEATTLE, condition:PTCLDY,temp:82  62
+Update weather bean: City=SEATTLEtemp=82  62condition=PTCLDY
+SHREVEPORT       --TCLDY--92 
+City:SHREVEPORT, condition:PTCLDY,temp:92  69
+Update weather bean: City=SHREVEPORTtemp=92  69condition=PTCLDY
+SIOUX CITY       --TCLDY--77 
+City:SIOUX CITY, condition:PTCLDY,temp:77  47
+Update weather bean: City=SIOUX CITYtemp=77  47condition=PTCLDY
+SIOUX FALLS      --OCLDY--78 
+City:SIOUX FALLS, condition:MOCLDY,temp:78  50
+Update weather bean: City=SIOUX FALLStemp=78  50condition=MOCLDY
+SOUTH BEND       --TCLDY--78 
+City:SOUTH BEND, condition:PTCLDY,temp:78  61
+Update weather bean: City=SOUTH BENDtemp=78  61condition=PTCLDY
+SPOKANE          --UNNY --86 
+City:SPOKANE, condition:SUNNY,temp:86  60
+Update weather bean: City=SPOKANEtemp=86  60condition=SUNNY
+SPRINGFIELD IL   --TCLDY--74 
+City:SPRINGFIELD IL, condition:PTCLDY,temp:74  57
+Update weather bean: City=SPRINGFIELD ILtemp=74  57condition=PTCLDY
+SPRINGFIELD MO   --TCLDY--81 
+City:SPRINGFIELD MO, condition:PTCLDY,temp:81  56
+Update weather bean: City=SPRINGFIELD MOtemp=81  56condition=PTCLDY
+SYRACUSE         --HWRS --83 
+City:SYRACUSE, condition:SHWRS,temp:83  70
+Update weather bean: City=SYRACUSEtemp=83  70condition=SHWRS
+TALLAHASSEE      --STRMS--98 
+City:TALLAHASSEE, condition:TSTRMS,temp:98  74
+Update weather bean: City=TALLAHASSEEtemp=98  74condition=TSTRMS
+TAMPA            --STRMS--92 
+City:TAMPA, condition:TSTRMS,temp:92  82
+Update weather bean: City=TAMPAtemp=92  82condition=TSTRMS
+TOLEDO           --OCLDY--84 
+City:TOLEDO, condition:MOCLDY,temp:84  66
+Update weather bean: City=TOLEDOtemp=84  66condition=MOCLDY
+TOPEKA           --UNNY --79 
+City:TOPEKA, condition:SUNNY,temp:79  53
+Update weather bean: City=TOPEKAtemp=79  53condition=SUNNY
+TUCSON          1--RYHOT--07 
+City:TUCSON, condition:VRYHOT,temp:107  78
+Update weather bean: City=TUCSONtemp=107  78condition=VRYHOT
+TULSA            --TCLDY--84 
+City:TULSA, condition:PTCLDY,temp:84  58
+Update weather bean: City=TULSAtemp=84  58condition=PTCLDY
+TUPELO           --STRMS--93 
+City:TUPELO, condition:TSTRMS,temp:93  71
+Update weather bean: City=TUPELOtemp=93  71condition=TSTRMS
+WACO             --UNNY --95 
+City:WACO, condition:SUNNY,temp:95  71
+Update weather bean: City=WACOtemp=95  71condition=SUNNY
+WASHINGTON DC    --HWRS --87 
+City:WASHINGTON DC, condition:SHWRS,temp:87  70
+Update weather bean: City=WASHINGTON DCtemp=87  70condition=SHWRS
+W PALM BEACH     --STRMS--89 
+City:W PALM BEACH, condition:TSTRMS,temp:89  78
+Update weather bean: City=W PALM BEACHtemp=89  78condition=TSTRMS
+WICHITA          --TCLDY--84 
+City:WICHITA, condition:PTCLDY,temp:84  61
+Update weather bean: City=WICHITAtemp=84  61condition=PTCLDY
+WICHITA FALLS    --TCLDY--89 
+City:WICHITA FALLS, condition:PTCLDY,temp:89  67
+Update weather bean: City=WICHITA FALLStemp=89  67condition=PTCLDY
+WILKES BARRE     --HWRS --87 
+City:WILKES BARRE, condition:SHWRS,temp:87  70
+Update weather bean: City=WILKES BARREtemp=87  70condition=SHWRS
+WILMINGTON DE    --STRMS--88 
+City:WILMINGTON DE, condition:TSTRMS,temp:88  70
+Update weather bean: City=WILMINGTON DEtemp=88  70condition=TSTRMS
+YAKIMA           --UNNY --90 
+City:YAKIMA, condition:SUNNY,temp:90  65
+Update weather bean: City=YAKIMAtemp=90  65condition=SUNNY
+YOUNGSTOWN       --HWRS --82 
+City:YOUNGSTOWN, condition:SHWRS,temp:82  64
+Update weather bean: City=YOUNGSTOWNtemp=82  64condition=SHWRS
+YUMA            1--RYHOT--13 
+City:YUMA, condition:VRYHOT,temp:113  86
+Update weather bean: City=YUMAtemp=113  86condition=VRYHOT
+Initializing WeatherService...5
+Weather information updated.
+WeatherService running....  <----- It is the 2(st/rd/th) time update!!
+
