@@ -1,0 +1,11 @@
+Frame 1, To SP 2
+Frame 2, To SP 2
+Frame 3, To SP 3
+Frame 4, To SP 3
+Frame 5, To SP 2
+Frame 6, To SP 2
+Frame 7, To SP 3
+Frame 8, To SP 3
+Frame 9, To SP 6
+Frame 10, To SP 6
+Wait for receiving 1 frames
